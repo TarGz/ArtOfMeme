@@ -1,0 +1,7 @@
+AuthUserFile /home/terraz/www/_ARTOFMEME_/proto/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Acces Restreint"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
