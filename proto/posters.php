@@ -54,65 +54,60 @@
           <li>Shop</li><span class="divider">/</span>
           <li class="active">Posters</li>
         </ul>
-        <!-- Main hero unit for a primary marketing message or call to action -->
-        <div class="hero-unit">
-          <h1>Hello, world!</h1>
-          <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div>
         <!-- Example row of columns -->
         <div class="row">
           <div class="span6">
             <h2>Poster 1</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
             <h2>Poster 2</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
          </div>
           <div class="span6">
             <h2>Poster 3</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
             <h2>Poster 4</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
             <h2>Poster 5</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
          </div>
           <div class="span6">
             <h2>Poster 6</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
             <h2>Poster 7</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>
          </div>
           <div class="span6">
             <h2>Poster 8</h2>
-            <a href="meme.php">
+            <a href="piece.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p><a class="btn" href="#">View details &raquo;</a></p>

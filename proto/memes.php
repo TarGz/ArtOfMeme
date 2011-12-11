@@ -36,8 +36,8 @@
       </div>
       <div class="content">
           <ul class="breadcrumb">
-            <li><a href="index.php">Home</a> <span class="divider">/</span></li>
-			<li><a href="shop.php">Shop</a> <span class="divider">/</span></li>
+            <li><a href="index.php">Home</a>
+            <span class="divider">/</span></li>
             <li class="active">Memes</li>
           </ul>
           

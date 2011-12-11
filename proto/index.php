@@ -25,7 +25,7 @@
       <div class="hero-unit">
         <h1>Hello, world!</h1>
         <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <p><a class="btn primary large" href="psoter.php">Shop a poster</a>&nbsp;&nbsp;<a class="btn secondary large" href="memes.php">find your favorite MeMe</a></p>
+        <p><a class="btn primary large" href="posters.php">Shop a poster</a>&nbsp;&nbsp;<a class="btn secondary large" href="memes.php">find your favorite MeMe</a></p>
       </div>
 
       <!-- Example row of columns -->

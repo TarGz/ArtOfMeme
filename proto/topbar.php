@@ -18,7 +18,7 @@
 		    <a href="#" class="dropdown-toggle">Contest</a>
 		    <ul class="dropdown-menu">
 		      <li><a href="contest-about.php">About</a></li>
-		      <li><a href="contest-score.php">Score design</a></li>
+		      <li><a href="contest-score-designs.php">Score design</a></li>
 		      <li><a href="contest-submit-design.php">Submit design</a></li>
 		      <li><a href="contest-submit-meme.php">Submit MeMe</a></li>
 		    </ul>
