@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Art Of MeMe : Artist N</title>
+    <title>Art Of MeMe : Artists</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -42,32 +42,9 @@
   </head>
 
   <body>
-      
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="index.html">Art Of MeMe</a>
-          <ul class="nav">
-            <li><a href="memes.html">Memes</a></li>
-            <li class="active"><a href="artists.html">Artists</a></li>
-			<li class="dropdown" data-dropdown="dropdown" >
-			    <a href="#" class="dropdown-toggle">Shop</a>
-			    <ul class="dropdown-menu">
 
-			      <li><a href="posters.html">Posters</a></li>
-			      <li><a href="posters.html">Stickers</a></li>
-			      <li><a href="posters.html">T-shirt</a></li>
-			      <li><a href="posters.html">...</a></li>
-			    </ul>
-			  </li>
-            <li><a href="contest.html">Contest</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <p class="pull-right">Logged in as <a href="#">username</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- TOP BAR -->
+	<? include 'topbar.php' ?>
 
     <div class="container-fluid">
       <div class="sidebar">
@@ -99,68 +76,57 @@
           <ul class="breadcrumb">
             <li><a href="index.html">Home</a> <span class="divider">/</span></li>
 			<li><a href="shop.html">Shop</a> <span class="divider">/</span></li>
-			<li><a href="artists.html">Artists</a> <span class="divider">/</span></li>
-            <li class="active">Artiste N</li>
+            <li class="active">Artists</li>
           </ul>
-        <!-- Example row of columns -->
-        
         <div class="hero-unit">
-                  <h1>Artiste name</h1>
+                  <h1>About Artists</h1>
                   <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div>
-        
-        
-        
-        
-                <h1>Posters</h1>   
-             <br/>
+                  <p><a class="btn secondary large" href="shop.html">Become an artist</a></p>
+        </div>        
+        <!-- Example row of columns -->
         <div class="row">
           <div class="span6">
-              <h2>Piece 1</h2>
-              <a href="piece.html">
-                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
+              <h2>Artist 1</h2>
+              <a href="artist.html">
+                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
-              <h2>Piece 2</h2>
-              <a href="piece.html">
-                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
+              <h2>Artist 2</h2>
+              <a href="artist.html">
+                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span6">
+              <h2>Artist 3</h2>
+              <a href="artist.html">
+                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span6">
+              <h2>Artist 4</h2>
+              <a href="artist.html">
+                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span6">
+              <h2>Artist 5</h2>
+              <a href="artist.html">
+                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
         </div>
-           <h1>Stickers</h1>   
-             <br/>
-        <div class="row">
-          <div class="span6">
-              <h2>Piece 1</h2>
-              <a href="piece.html">
-                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span6">
-              <h2>Piece 2</h2>
-              <a href="piece.html">
-                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span6">
-              <h2>Piece 3</h2>
-              <a href="piece.html">
-                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-        </div>       
-           
+       
         <div class="row show-grid">
             <div class="span10 offset2">
                 <div class="pagination">
@@ -176,47 +142,9 @@
                 </div>         
             </div>
          </div>
-
        
-       
-        <footer>
-			<div class="row show-grid" title="Four column layout">
-			    <div class="span4">
-				<h6>Shop</h6>
-		      	<ul>
-	            	<li><a href="#">Artists 1</a></li>
-	            	<li><a href="#">Artists 2</a></li>
-	            	<li><a href="#">Artists 3</a></li>
-	            	<li><a href="#">Artists 4</a></li>
-					<li><a href="#">Artists 5</a></li>
-	          	</ul>
-				</div>
-			    <div class="span4">
-					<h6>Social</h6>
-			      	<ul>
-		            	<li><a href="#">Facebook</a></li>
-		            	<li><a href="#">Twitter</a></li>
-		            	<li><a href="#">FlickR</a></li>
-		            	<li><a href="#">Google+</a></li>
-		          	</ul>
-			    </div>
-			    <div class="span4">
-				<h6>Legal</h6>
-				<ul>
-	            	<li><a href="#">Help</a></li>
-	            	<li><a href="#">Contact us</a></li>
-	          	</ul>
-				</div>
-			    <div class="span4">
-					<h6>Info</h6>
-					<ul>
-		            	<li><a href="#">English</a></li>
-		            	<li><a href="#">Meme</a></li>
-		            	<li><a href="#">French</a></li>
-		          	</ul>
-			    </div>
-			  </div>
-	      </footer>
+		<!-- FOOTER-->
+		<? include 'footer.php' ?>
       </div>
     </div>
 

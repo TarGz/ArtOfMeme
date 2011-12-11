@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Art Of MeMe : Memes</title>
+    <title>Art Of MeMe : Artist N</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -43,31 +43,8 @@
 
   <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="index.html">Art Of MeMe</a>
-          <ul class="nav">
-            <li class="active"><a href="memes.html">Memes</a></li>
-            <li><a href="artists.html">Artists</a></li>
-			<li class="dropdown" data-dropdown="dropdown" >
-			    <a href="#" class="dropdown-toggle">Shop</a>
-			    <ul class="dropdown-menu">
-
-			      <li><a href="posters.html">Posters</a></li>
-			      <li><a href="posters.html">Stickers</a></li>
-			      <li><a href="posters.html">T-shirt</a></li>
-			      <li><a href="posters.html">...</a></li>
-			    </ul>
-			  </li>
-            <li><a href="contest.html">Contest</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <p class="pull-right">Logged in as <a href="#">username</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- TOP BAR -->
+	<? include 'topbar.php' ?>
 
     <div class="container-fluid">
       <div class="sidebar">
@@ -99,58 +76,80 @@
           <ul class="breadcrumb">
             <li><a href="index.html">Home</a> <span class="divider">/</span></li>
 			<li><a href="shop.html">Shop</a> <span class="divider">/</span></li>
-            <li class="active">Memes</li>
+			<li><a href="memes.html">MeMes</a> <span class="divider">/</span></li>
+            <li class="active">MeMe N</li>
           </ul>
-          
-        <div class="hero-unit">
-                  <h1>About MeMe</h1>
-                  <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                  <p><a class="btn secondary large" href="shop.html">More about MeMe</a></p>
-        </div>  
         <!-- Example row of columns -->
+        <div class="hero-unit">
+                  <h1>MeMe name</h1>
+                  <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+        <div class="row">
+                <div class="span-one-third">
+                  <h2>About</h2>
+                  <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                  <p><a class="btn" href="#">More on Wikipedia</a></p>
+                </div>
+                <div class="span-one-third">
+                  <h2>Origin</h2>
+                   <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn" href="#">More on Wikipedia</a></p>
+               </div>
+                <div class="span-one-third">
+                  <h2>Spread</h2>
+                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <p><a class="btn" href="#">More on Wikipedia</a></p>
+                </div>
+              </div>
+           <br/>
+           <h1>Posters</h1>   
+             <br/>
         <div class="row">
           <div class="span6">
-              <h2>Meme 1</h2>
-              <a href="meme.html">
-                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
+              <h2>Piece 1</h2>
+              <a href="piece.html">
+                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
           <div class="span6">
-              <h2>Meme 2</h2>
-              <a href="meme.html">
-                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span6">
-              <h2>Meme 3</h2>
-              <a href="meme.html">
-                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span6">
-              <h2>Meme 4</h2>
-              <a href="meme.html">
-                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
-              </a>
-              <p>Donec id elit non mi porta gravida at eget metus. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span6">
-              <h2>Meme 5</h2>
-              <a href="meme.html">
-                <img class="thumbnail" src="http://placehold.it/330x300" alt="">
+              <h2>Piece 2</h2>
+              <a href="piece.html">
+                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
               <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
         </div>
-       
+           <h1>Stickers</h1>   
+             <br/>
+        <div class="row">
+          <div class="span6">
+              <h2>Piece 1</h2>
+              <a href="piece.html">
+                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span6">
+              <h2>Piece 2</h2>
+              <a href="piece.html">
+                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span6">
+              <h2>Piece 3</h2>
+              <a href="piece.html">
+                <img class="thumbnail" src="http://placehold.it/330x467" alt="">
+              </a>
+              <p>Donec id elit non mi porta gravida at eget metus. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+        </div>       
         <div class="row show-grid">
             <div class="span10 offset2">
                 <div class="pagination">
@@ -167,44 +166,9 @@
             </div>
          </div>
        
+		<!-- FOOTER-->
+		<? include 'footer.php' ?>
 
-       
-       
-        <footer>
-			<div class="row show-grid">
-			    <div class="span3">
-				<h6>Shop</h6>
-		      	<ul>
-	            	<li><a href="#">Memes</a></li>
-	            	<li><a href="#">Artists</a></li>
-	          	</ul>
-				</div>
-			    <div class="span3">
-					<h6>Social</h6>
-			      	<ul>
-		            	<li><a href="#">Facebook</a></li>
-		            	<li><a href="#">Twitter</a></li>
-		            	<li><a href="#">FlickR</a></li>
-		            	<li><a href="#">Google+</a></li>
-		          	</ul>
-			    </div>
-			    <div class="span3">
-				<h6>Legal</h6>
-				<ul>
-	            	<li><a href="#">Help</a></li>
-	            	<li><a href="#">Contact us</a></li>
-	          	</ul>
-				</div>
-			    <div class="span3">
-					<h6>Info</h6>
-					<ul>
-		            	<li><a href="#">English</a></li>
-		            	<li><a href="#">Meme</a></li>
-		            	<li><a href="#">French</a></li>
-		          	</ul>
-			    </div>
-			  </div>
-	      </footer>
       </div>
     </div>
 

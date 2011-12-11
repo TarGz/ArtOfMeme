@@ -51,38 +51,8 @@
 
   <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="index.html">Art Of MeMe</a>
-          <ul class="nav">
-            <li><a href="memes.html">Memes</a></li>
-            <li><a href="artists.html">Artists</a></li>
-			<li class="dropdown" data-dropdown="dropdown" >
-			    <a href="#" class="dropdown-toggle">Shop</a>
-			    <ul class="dropdown-menu">
-			      <li><a href="posters.html">Posters</a></li>
-			      <li><a href="posters.html">Stickers</a></li>
-			      <li><a href="posters.html">T-shirt</a></li>
-			      <li><a href="posters.html">...</a></li>
-			    </ul>
-			 </li>
-				<li class="dropdown" data-dropdown="dropdown" >
-			    <a href="#" class="dropdown-toggle">Contest</a>
-			    <ul class="dropdown-menu">
-			      <li><a href="contest-about.html">About</a></li>
-			      <li><a href="contest-score.html">Score design</a></li>
-			      <li><a href="contest-submit-design.html">Submit design</a></li>
-			      <li><a href="contest-submit-meme.html">Submit MeMe</a></li>
-			    </ul>
-			 </li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <p class="pull-right">Logged in as <a href="#">username</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- TOP BAR -->
+	<? include 'topbar.php' ?>
 
 
     <div class="container">
@@ -113,44 +83,8 @@
         </div>
       </div>
 
-      <footer>
-		<div class="row show-grid" title="Four column layout">
-		    <div class="span4">
-			<h6>Shop</h6>
-	      	<ul>
-            	<li><a href="#">Artists 1</a></li>
-            	<li><a href="#">Artists 2</a></li>
-            	<li><a href="#">Artists 3</a></li>
-            	<li><a href="#">Artists 4</a></li>
-				<li><a href="#">Artists 5</a></li>
-          	</ul>
-			</div>
-		    <div class="span4">
-				<h6>Social</h6>
-		      	<ul>
-	            	<li><a href="#">Facebook</a></li>
-	            	<li><a href="#">Twitter</a></li>
-	            	<li><a href="#">FlickR</a></li>
-	            	<li><a href="#">Google+</a></li>
-	          	</ul>
-		    </div>
-		    <div class="span4">
-			<h6>Legal</h6>
-			<ul>
-            	<li><a href="#">Help</a></li>
-            	<li><a href="#">Contact us</a></li>
-          	</ul>
-			</div>
-		    <div class="span4">
-				<h6>Info</h6>
-				<ul>
-	            	<li><a href="#">English</a></li>
-	            	<li><a href="#">Meme</a></li>
-	            	<li><a href="#">French</a></li>
-	          	</ul>
-		    </div>
-		  </div>
-      </footer>
+	<!-- FOOTER-->
+	<? include 'footer.php' ?>
 
     </div> <!-- /container -->
 

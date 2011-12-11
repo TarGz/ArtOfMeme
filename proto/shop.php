@@ -40,27 +40,8 @@
 
   <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="index.html">Art Of MeMe</a>
-          <ul class="nav">
-			<li class="dropdown" data-dropdown="dropdown" >
-			    <a href="#" class="dropdown-toggle">Shop</a>
-			    <ul class="dropdown-menu">
-			      <li><a href="memes.html">Memes</a></li>
-			      <li><a href="artists.html">Artists</a></li>
-			      <li><a href="posters.html">Posters</a></li>
-			    </ul>
-			  </li>
-            <li><a href="contest.html">Contest</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-          <p class="pull-right">Logged in as <a href="#">username</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- TOP BAR -->
+	<? include 'topbar.php' ?>
 
     <div class="container-fluid">
       <div class="sidebar">
@@ -154,9 +135,10 @@
             <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
         </div>
-        <footer>
-          <p>&copy; Company 2011</p>
-        </footer>
+
+		<!-- FOOTER-->
+		<? include 'footer.php' ?>
+		
       </div>
     </div>
 
