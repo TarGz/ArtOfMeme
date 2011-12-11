@@ -74,20 +74,20 @@
       </div>
       <div class="content">
           <ul class="breadcrumb">
-            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-			<li><a href="shop.html">Shop</a> <span class="divider">/</span></li>
+            <li><a href="index.php">Home</a> <span class="divider">/</span></li>
+			<li><a href="shop.php">Shop</a> <span class="divider">/</span></li>
             <li class="active">Artists</li>
           </ul>
         <div class="hero-unit">
                   <h1>About Artists</h1>
                   <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                  <p><a class="btn secondary large" href="shop.html">Become an artist</a></p>
+                  <p><a class="btn secondary large" href="shop.php">Become an artist</a></p>
         </div>        
         <!-- Example row of columns -->
         <div class="row">
           <div class="span6">
               <h2>Artist 1</h2>
-              <a href="artist.html">
+              <a href="artist.php">
                 <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -95,7 +95,7 @@
           </div>
           <div class="span6">
               <h2>Artist 2</h2>
-              <a href="artist.html">
+              <a href="artist.php">
                 <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -103,7 +103,7 @@
           </div>
           <div class="span6">
               <h2>Artist 3</h2>
-              <a href="artist.html">
+              <a href="artist.php">
                 <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -111,7 +111,7 @@
           </div>
           <div class="span6">
               <h2>Artist 4</h2>
-              <a href="artist.html">
+              <a href="artist.php">
                 <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -119,7 +119,7 @@
           </div>
           <div class="span6">
               <h2>Artist 5</h2>
-              <a href="artist.html">
+              <a href="artist.php">
                 <img class="thumbnail" src="http://placehold.it/330x300" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>

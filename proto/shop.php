@@ -72,19 +72,19 @@
       <div class="content">
         <!-- Main hero unit for a primary marketing message or call to action -->
         <ul class="breadcrumb">
-          <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+          <li><a href="index.php">Home</a> <span class="divider">/</span></li>
           <li class="active">Shop</li>
         </ul>
         <div class="hero-unit">
           <h1>Hello, world!</h1>
           <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <p><a class="btn primary large" href="memes.html">Find a MeMe</a>&nbsp;&nbsp;&nbsp;<a class="btn large" href="artists.html">Browse Artist</a></p>
+          <p><a class="btn primary large" href="memes.php">Find a MeMe</a>&nbsp;&nbsp;&nbsp;<a class="btn large" href="artists.php">Browse Artist</a></p>
         </div>
         <!-- Example row of columns -->
         <div class="row">
           <div class="span6">
             <h2>MeMe 1</h2>
-            <a href="meme.html">
+            <a href="meme.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -92,7 +92,7 @@
           </div>
           <div class="span6">
             <h2>MeMe 2</h2>
-            <a href="meme.html">
+            <a href="meme.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -100,7 +100,7 @@
          </div>
           <div class="span6">
             <h2>MeMe 3</h2>
-            <a href="meme.html">
+            <a href="meme.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -112,7 +112,7 @@
         <div class="row">
           <div class="span6">
             <h2>Artist 1</h2>
-			<a href="artist.html">
+			<a href="artist.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -120,7 +120,7 @@
           </div>
           <div class="span6">
             <h2>Artist 2</h2>
-            <a href="artist.html">
+            <a href="artist.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -128,7 +128,7 @@
          </div>
           <div class="span6">
             <h2>Artist 3</h2>
-            <a href="artist.html">
+            <a href="artist.php">
               <img class="thumbnail" src="http://placehold.it/330x330" alt="">
             </a>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>

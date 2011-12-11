@@ -74,9 +74,9 @@
       </div>
       <div class="content">
           <ul class="breadcrumb">
-            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-			<li><a href="shop.html">Shop</a> <span class="divider">/</span></li>
-			<li><a href="memes.html">MeMes</a> <span class="divider">/</span></li>
+            <li><a href="index.php">Home</a> <span class="divider">/</span></li>
+			<li><a href="shop.php">Shop</a> <span class="divider">/</span></li>
+			<li><a href="memes.php">MeMes</a> <span class="divider">/</span></li>
             <li class="active">MeMe N</li>
           </ul>
         <!-- Example row of columns -->
@@ -107,7 +107,7 @@
         <div class="row">
           <div class="span6">
               <h2>Piece 1</h2>
-              <a href="piece.html">
+              <a href="piece.php">
                 <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -115,7 +115,7 @@
           </div>
           <div class="span6">
               <h2>Piece 2</h2>
-              <a href="piece.html">
+              <a href="piece.php">
                 <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -127,7 +127,7 @@
         <div class="row">
           <div class="span6">
               <h2>Piece 1</h2>
-              <a href="piece.html">
+              <a href="piece.php">
                 <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -135,7 +135,7 @@
           </div>
           <div class="span6">
               <h2>Piece 2</h2>
-              <a href="piece.html">
+              <a href="piece.php">
                 <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
@@ -143,7 +143,7 @@
           </div>
           <div class="span6">
               <h2>Piece 3</h2>
-              <a href="piece.html">
+              <a href="piece.php">
                 <img class="thumbnail" src="http://placehold.it/330x467" alt="">
               </a>
               <p>Donec id elit non mi porta gravida at eget metus. </p>
