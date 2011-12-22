@@ -35,9 +35,7 @@
 	</script>
 	
     <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
+
     </style>
 
     <!-- Le fav and touch icons -->

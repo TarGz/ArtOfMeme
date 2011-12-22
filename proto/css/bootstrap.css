@@ -1301,8 +1301,9 @@ table .headerSortUp.purple, table .headerSortDown.purple {
  * Repeatable UI elements outside the base styles provided from the scaffolding
  * ---------------------------------------------------------------------------- */
 .topbar {
-  height: 40px;
-  position: fixed;
+  background-color: pink;
+  height: 0px;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -2464,4 +2465,26 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+/* aom.less
+ * ArtOfMeme variables
+ * ------------------------------------------------------------- */
+body {
+  padding-top: 0px;
+}
+/* aom_navbar.less
+ * Base styles for various input types, form layouts, and states
+ * ------------------------------------------------------------- */
+.panel {
+  background-color: grey;
+}
+#topheader {
+  background-color: white;
+}
+.lang {
+  width: 40px;
+  background-color: red;
+}
+.test2 {
+  height: 0px;
 }

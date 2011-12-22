@@ -20,7 +20,7 @@
           </ul>
 		<div class="row show-grid">
 	    
-	    	  <div class="span11">
+	    	  <div class="span10">
 	    			
 	           		<img class="thumbnail" src="http://placehold.it/600x849" alt="">
 	           		<h1>Art name</h1>
@@ -74,18 +74,17 @@
            		
 	          </div>    
 	
-	    	  <div class="span5">
+	    	  <div class="span6">
 				<div class="well">
 	         	 <h5>Score</h5>
-				  <div class="pagination">
-			        <ul>
-			          <li><a href="#" >1</a></li>
-			          <li><a href="#" style="background-color: #CCCCCC;">2</a></li>
-			          <li><a href="#" style="background-color: #999999;">3</a></li>
-			          <li><a href="#" style="background-color: #777777;">4</a></li>
-			          <li><a href="#" style="background-color: #555555;">5</a></li>
-			        </ul>
-		      	  </div>
+					<p>
+						<a class="btn large" href="#">1</a>
+					    <a class="btn large" href="#">2</a>
+						<a class="btn large" href="#">3</a>
+						<a class="btn large" href="#">4</a>
+						<a class="btn primary large" href="#">me gusta</a>
+					</p>	
+	
 		      	  <h5>Artist</h5>
 		          <ul>
 		          	<li>TarGz</li>

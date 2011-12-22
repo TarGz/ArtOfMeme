@@ -13,9 +13,9 @@
         
         <div class="alert-message warning">
           <a class="close" href="#">×</a>
-          <p><strong>Holy guacamole!</strong> Art Of MeMe est disponnible en Français, voulez-vous changer votre langue par defaut ?</p>
+          <p><strong>Holy guacamole!</strong> <br>We'd like to set these regional settings for you: English (US), $ United States Dollar USD, United States</p>
           <div class="alert-actions">
-                <a class="btn small" href="#">Oui merci</a> <a class="btn small" href="#">No thanks</a>
+                <a class="btn small" href="#">Ok</a> <a class="btn small" href="#">No thanks</a>
            </div>
         </div>
 

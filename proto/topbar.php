@@ -1,6 +1,28 @@
 <div class="topbar">
   <div class="fill">
+
+	
+	<div class="panel">
+	<div class="container">
+	<div id="topheader" class="row">
+
+	    <div id="lang" class="span4 offset4">
+			<div class="row">
+			<div class="span1">Fr€</div>
+			<div class="span1">Us$</div>
+			<div class="span1">De€</div>
+			</div>
+		</div>
+	  </div>
+	  
+	  
+	</div>
+	</div>
+	
     <div class="container">
+		
+	
+
       <a class="brand" href="index.php">Art Of MeMe</a>
       <ul class="nav">
         <li><a href="memes.php">Memes</a></li>
