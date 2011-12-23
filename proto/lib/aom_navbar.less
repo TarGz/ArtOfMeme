@@ -1,17 +1,45 @@
 /* aom_navbar.less
  * Base styles for various input types, form layouts, and states
  * ------------------------------------------------------------- */
-.panel{
-	background-color:grey;
-}
+
 #topheader{
 	background-color:white;
 }
-.lang{
-	.span1;
+
+.test2{
+	height:@topbarsize;
+}
+
+.zone{
+	background-color:#EFEFEF;
+}
+
+
+.cartTop{
 	background-color:red;
 	
 }
-.test2{
-	height:@topbarsize;
+
+.cartMiddle{
+	background-color:red;
+}
+.cartBotom{
+	z-index:2000;
+	margin-left:660px;
+	position:absolute;
+	background-color:pink;
+	overflow:hidden;
+	height:50px;
+			transition: height .5s ease;  
+		 -o-transition: height .5s ease;
+		-ms-transition: height .5s ease;  
+	   -moz-transition: height .5s ease; 
+    -webkit-transition: height .5s ease;  
+	 	 
+	 	    
+	         
+}
+.cartBotom:hover{
+	background-color:red;
+	height:300px;
 }
