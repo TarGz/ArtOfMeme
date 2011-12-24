@@ -2,35 +2,51 @@
  * Base styles for various input types, form layouts, and states
  * ------------------------------------------------------------- */
 
-
-@grey-cart:#777;
+ @cartcolor:grey;
 
 #topheader{
 	background-color:white;
 }
 
-.test2{
-	height:@topbarsize;
-}
-
-.zone{
-	background-color:#EFEFEF;
-}
-
-
 .cartTop{
-	background-color:@grey-cart;
+
 	
 }
 
-.cartMiddle{
-	background-color:@grey-cart;
+
+.cartzone{
+	margin-top:40px;
+	background-color: @cartcolor;
+	overflow:hidden;
+	height:0px;
+			transition: height .5s ease;  
+		 -o-transition: height .5s ease;
+		-ms-transition: height .5s ease;  
+	   -moz-transition: height .5s ease; 
+    -webkit-transition: height .5s ease;  
+	
+}
+/*.cartzone:hover{
+	height:150px;
+}*/
+
+.blockcart{
+	position:absolute;
+	height:50px;
+	background-color: @cartcolor;
+	color:#EFEFEF;
+
+}
+.user{
+	float:left;
 }
 .cartBotom{
-	z-index:2000;
+	z-index:12200;
 	margin-left:660px;
 	position:absolute;
-	background-color:@grey-cart;
+	color:black;
+	height:40px;
+	/*
 	overflow:hidden;
 	height:50px;
 			transition: height .5s ease;  
@@ -38,11 +54,13 @@
 		-ms-transition: height .5s ease;  
 	   -moz-transition: height .5s ease; 
     -webkit-transition: height .5s ease;  
-	 	 
+	*/
 	 	    
 	         
 }
+/*
 .cartBotom:hover{
 	background-color:@grey-cart;
 	height:300px;
 }
+*/

@@ -2478,32 +2478,49 @@ body {
 #topheader {
   background-color: white;
 }
-.test2 {
-  height: 0px;
-}
-.zone {
-  background-color: #EFEFEF;
-}
-.cartTop {
-  background-color: #777777;
-}
-.cartMiddle {
-  background-color: #777777;
-}
-.cartBotom {
-  z-index: 2000;
-  margin-left: 660px;
-  position: absolute;
-  background-color: #777777;
+.cartzone {
+  margin-top: 40px;
+  background-color: grey;
   overflow: hidden;
-  height: 50px;
+  height: 0px;
   transition: height .5s ease;
   -o-transition: height .5s ease;
   -ms-transition: height .5s ease;
   -moz-transition: height .5s ease;
   -webkit-transition: height .5s ease;
 }
-.cartBotom:hover {
-  background-color: #777777;
-  height: 300px;
+/*.cartzone:hover{
+	height:150px;
+}*/
+.blockcart {
+  position: absolute;
+  height: 50px;
+  background-color: grey;
+  color: #EFEFEF;
 }
+.user {
+  float: left;
+}
+.cartBotom {
+  z-index: 12200;
+  margin-left: 660px;
+  position: absolute;
+  color: black;
+  height: 40px;
+  /*
+	overflow:hidden;
+	height:50px;
+			transition: height .5s ease;  
+		 -o-transition: height .5s ease;
+		-ms-transition: height .5s ease;  
+	   -moz-transition: height .5s ease; 
+    -webkit-transition: height .5s ease;  
+	*/
+
+}
+/*
+.cartBotom:hover{
+	background-color:@grey-cart;
+	height:300px;
+}
+*/
