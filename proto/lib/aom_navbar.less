@@ -2,6 +2,9 @@
  * Base styles for various input types, form layouts, and states
  * ------------------------------------------------------------- */
 
+
+@grey-cart:#777;
+
 #topheader{
 	background-color:white;
 }
@@ -16,18 +19,18 @@
 
 
 .cartTop{
-	background-color:red;
+	background-color:@grey-cart;
 	
 }
 
 .cartMiddle{
-	background-color:red;
+	background-color:@grey-cart;
 }
 .cartBotom{
 	z-index:2000;
 	margin-left:660px;
 	position:absolute;
-	background-color:pink;
+	background-color:@grey-cart;
 	overflow:hidden;
 	height:50px;
 			transition: height .5s ease;  
@@ -40,6 +43,6 @@
 	         
 }
 .cartBotom:hover{
-	background-color:red;
+	background-color:@grey-cart;
 	height:300px;
 }

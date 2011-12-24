@@ -2485,16 +2485,16 @@ body {
   background-color: #EFEFEF;
 }
 .cartTop {
-  background-color: red;
+  background-color: #777777;
 }
 .cartMiddle {
-  background-color: red;
+  background-color: #777777;
 }
 .cartBotom {
   z-index: 2000;
   margin-left: 660px;
   position: absolute;
-  background-color: pink;
+  background-color: #777777;
   overflow: hidden;
   height: 50px;
   transition: height .5s ease;
@@ -2504,6 +2504,6 @@ body {
   -webkit-transition: height .5s ease;
 }
 .cartBotom:hover {
-  background-color: red;
+  background-color: #777777;
   height: 300px;
 }
