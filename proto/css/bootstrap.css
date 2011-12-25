@@ -1410,9 +1410,6 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   background-image: -o-linear-gradient(top, #333333, #222222);
   background-image: linear-gradient(top, #333333, #222222);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 .topbar div > ul, .nav {
   display: block;
@@ -2500,6 +2497,32 @@ body {
 }
 .user {
   float: left;
+}
+.navbar-arrow {
+  z-order: 13000;
+  border-color: transparent  transparent white transparent ;
+  border-style: solid;
+  border-width: 10px;
+  margin-top: 20px;
+  height: 0;
+  width: 0;
+  position: relative;
+  margin-left: 640px;
+}
+.navbar-arrow.open {
+  z-order: 13000;
+  border-color: transparent  transparent red transparent ;
+}
+.container-arrow {
+  z-order: 14000;
+  border-color: transparent transparent white transparent ;
+  border-style: solid;
+  border-width: 10px;
+  margin-top: -20px;
+  margin-left: 700px;
+  height: 0;
+  width: 0;
+  position: relative;
 }
 .cartBotom {
   z-index: 12200;

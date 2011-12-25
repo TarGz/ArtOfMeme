@@ -41,12 +41,14 @@ window.onload = function(){
 		$("#cartbouton").hover(
 		
 		  function () {
-		    console.log("1 over");
+		    console.log("OVER ");
 			$(".cartzone").height("150px");
+			$(".navbar-arrow").css("border-color",  "transparent  transparent grey transparent");
 		  }, 
 		  function () {
-		    console.log("2 out");
-			$("#cartbouton").unbind('mouseenter mouseleave');
+			  
+			//$("#cartbouton").unbind('mouseenter mouseleave');
+			
 		  }
 		);
 
@@ -54,8 +56,10 @@ window.onload = function(){
 	}
 
 	
-	
-
+	function cleararrow(){
+		console.log("CLEAR ARROW");
+		$(".navbar-arrow").css("border-color",  "transparent  transparent white transparent");
+	}
 
 
 function bindout(){
@@ -66,8 +70,9 @@ function bindout(){
   	  }, 
   	  function () {
   	    console.log("2 out");
+		
   		$(".cartzone").height("0px");
-		 setTimeout('bindhover()',300);
+		 setTimeout('cleararrow()',500);
 
 		//bindhover();
 	 }
@@ -148,12 +153,12 @@ function bindout(){
 	          <li><a href="blog.php">blog</a></li>
 	          <li><a href="about.php">about</a></li>
 
-
-			  <li class="user"><a href="#">Hallo Julien,</a></li>
+			  <div id="navbar-arrow" class="navbar-arrow"></div>
+			  
 	        </ul>
 	     
 		  
-
+				<ul class="user pull-right"><li id="cartbouton"><a href="#">Hallo Julien,</a></li></ul>
 		  
 		   </div>
 		  
@@ -167,6 +172,7 @@ function bindout(){
 	  </div>
 	  
 	 <div class="cartzone">
+		 
     <div class="container">
 		<div class="row">
         <li class="span2 offset7">
@@ -199,7 +205,7 @@ function bindout(){
 	<a href="#" class="btn primary">Order</a>
  </li>
 
- </li>
+ 
  
  
 
@@ -209,16 +215,26 @@ function bindout(){
 
 		  
 	 </div>
-
-    <div id="cartbouton" class="container">
+	 
+	
+    <!-- div  class="container">
+		
 		<div class="row">
 			<div class="blockcart span4 offset11"><h3>TOTAL Cart : 129€</h3></div>
 		</div>
-	</div>
+	</div -->
+	
+	
 
-   
+
     <div class="container">
+		<div class="container-arrow"></div>
+		
+		
       <!-- Main hero unit for a primary marketing message or call to action -->
+	  
+	  <br/><br/>
+	  
       <div class="hero-unit">
         <h1>Hello, world!</h1>
         <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
