@@ -1,23 +1,29 @@
+	 <!-- COUNTRY -->
+  	<div class="container">
+  		<div id="topheader" class="row">
+  	    	<div id="lang" class="span6 offset11 cartTop">
+			<ul class="country-nav" style="margin: 0 0 0 0;">
+		        <li class="active"><a href="#">Fr €</a></li>
+		        <li><a href="#">Us $</a></li>
+		        <li><a href="#">Es €</a></li>
+		    </ul>
+
+  			</div>
+  		</div>
+		
+	</div><!-- /COUNTRY -->
+
+
+
+
+
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="fill">
 
 	
 	<div class="panel">
-	<div class="container">
-	<div id="topheader" class="row">
 
-	    <div id="lang" class="span4 offset4">
-			<div class="row">
-			<div class="span1">Fr€</div>
-			<div class="span1">Us$</div>
-			<div class="span1">De€</div>
-			</div>
-		</div>
-	  </div>
-	  
-	  
-	</div>
-	</div>
 	
     <div class="container">
 		
@@ -48,7 +54,55 @@
         <li><a href="blog.php">blog</a></li>
         <li><a href="about.php">about</a></li>
       </ul>
-      <p class="pull-right">Logged in as <a href="#">username</a></p>
+      <p id="cartbouton" class="pull-right">Logged in as <a href="#">username</a></p>
+	  <div id="navbar-arrow" class="navbar-arrow"></div>
     </div>
   </div>
+  </div>
 </div>
+<!-- /TOPBAR -->
+
+
+<!-- CART -->
+	 <div class="cartzone">
+		 <a id="closecartbuton" class="close" href="#">x</a>
+    	 <div class="container">
+			 <div class="row">
+		        <li class="span2 offset7">
+					<strong>Artwork Title</strong>
+		          <a href="#">
+		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+		          </a>
+				  <strong>45€</strong>
+				<a href="#"><span class="label important">X</span>remove</a>
+		        </li>
+		        <li class="span2">
+					<strong>Artwork Title</strong>
+		          <a href="#">
+		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+		          </a>
+				  <strong>45€</strong>
+				 <a href="#"><span class="label important">X</span>remove</a>
+		        </li>
+				 <li class="span2">
+					<strong>Artwork Title</strong>
+				   <a href="#">
+				     <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+				   </a>
+				  <strong>45€</strong>
+				 <a href="#"><span class="label important">X</span>remove</a>
+				 </li>
+				 <li class="span2">
+					 	blablalblblbl
+					<a href="#" class="btn primary">Order</a>
+				 </li>
+			 </ul></div>
+	    </div>
+	</div>
+	<br/>
+<!-- /CART -->
+<!-- ARROW -->
+	<div class="container">
+		<div class="container-arrow"></div>
+	</div>
+<!-- /ARROW -->

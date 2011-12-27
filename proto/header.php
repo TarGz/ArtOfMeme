@@ -20,23 +20,10 @@
     <script src="js/bootstrap-scrollspy.js"></script>
     <script src="js/bootstrap-tabs.js"></script>
     <script src="js/bootstrap-buttons.js"></script>
+	<script src="js/artofmeme.js"></script>
     
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    
-    
-    <script>
-	alert('ni');
-	$(document).ready(function(){
-		alert('dready');
-		$('#topbar').dropdown();
-	}
-
-	</script>
-	
-    <style type="text/css">
-
-    </style>
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">

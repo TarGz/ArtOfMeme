@@ -2475,7 +2475,38 @@ body {
 #topheader {
   background-color: white;
 }
+.country-nav {
+  border-color: #ddd;
+  border-style: solid;
+}
+.country-nav ul, .country-nav ol {
+  margin: 0 0 0 0;
+}
+.country-nav > li {
+  position: relative;
+  margin-bottom: -1px;
+  display: inline;
+}
+.country-nav > li > a {
+  padding: 0 3px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ddd;
+}
+.country-nav > li > a:hover {
+  text-decoration: none;
+  background-color: #eee;
+  border-color: #eee #eee #ddd;
+}
+.country-nav .active > a {
+  border: 1px solid #EFEFEF;
+  background-color: #222;
+  color: #EFEFEF;
+}
 .cartzone {
+  position: relative;
   margin-top: 40px;
   background-color: grey;
   overflow: hidden;
@@ -2486,9 +2517,11 @@ body {
   -moz-transition: height .5s ease;
   -webkit-transition: height .5s ease;
 }
-/*.cartzone:hover{
-	height:150px;
-}*/
+#closecartbuton {
+  font-size: 22px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
 .blockcart {
   position: absolute;
   height: 50px;
@@ -2507,7 +2540,7 @@ body {
   height: 0;
   width: 0;
   position: relative;
-  margin-left: 640px;
+  margin-left: 840px;
 }
 .navbar-arrow.open {
   z-order: 13000;
@@ -2518,8 +2551,8 @@ body {
   border-color: transparent transparent white transparent ;
   border-style: solid;
   border-width: 10px;
-  margin-top: -20px;
-  margin-left: 700px;
+  margin-top: -38px;
+  margin-left: 840px;
   height: 0;
   width: 0;
   position: relative;

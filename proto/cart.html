@@ -29,10 +29,32 @@
 	<script>
 	
 window.onload = function(){
-	bindhover();
-	bindout();
+	//bindhover();
+	//bindout();
+	bindclick();
+	open = false; 
 }
 
+function bindclick(){
+
+	$("#closecartbuton").click(function() {butonclick();});
+	$("#cartbouton").click(function() {butonclick();});
+}
+function butonclick(){
+  if(open == false){
+	 	 open=true;
+	 	 $(".cartzone").height("150px");
+		 $(".navbar-arrow").css("border-color",  "transparent  transparent grey transparent");
+	 }else{
+		open=false;
+		$(".cartzone").height("0px");
+		setTimeout('cleararrow()',500);
+	}
+	
+}
+function close(){
+	
+}
 
 
 	function bindhover(){
@@ -94,6 +116,17 @@ function bindout(){
 
   <body>
 	  
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=147558735304486";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+	  
+	  
+	  <div class="fb-like" data-href="http://www.artofmeme.com/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	  
 	 <!-- CART TOP -->
   	<div class="container">
@@ -105,11 +138,7 @@ function bindout(){
 					<a href="#" >De€</a>
   			</div>
   		</div>
-		
-  		<!-- CART BOTOM 
-  		<div class="cartBotom span4">
-  		Hallo Julien
-  		</div>-->
+
 		
 		
   	 </div><!-- /CART TOP -->
@@ -172,45 +201,40 @@ function bindout(){
 	  </div>
 	  
 	 <div class="cartzone">
-		 
-    <div class="container">
-		<div class="row">
-        <li class="span2 offset7">
-			<strong>Artwork Title</strong>
-          <a href="#">
-            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-          </a>
-		  <strong>45€</strong>
-		<a href="#"><span class="label important">X</span>remove</a>
-        </li>
+		 <a id="closecartbuton" class="close" href="#">x</a>
+    	 <div class="container">
+			 <div class="row">
+		        <li class="span2 offset7">
+					<strong>Artwork Title</strong>
+		          <a href="#">
+		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+		          </a>
+				  <strong>45€</strong>
+				<a href="#"><span class="label important">X</span>remove</a>
+		        </li>
         
-        <li class="span2">
-			<strong>Artwork Title</strong>
-          <a href="#">
-            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-          </a>
-		  <strong>45€</strong>
-		 <a href="#"><span class="label important">X</span>remove</a>
-        </li>
- <li class="span2">
-	<strong>Artwork Title</strong>
-   <a href="#">
-     <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-   </a>
-  <strong>45€</strong>
- <a href="#"><span class="label important">X</span>remove</a>
- </li>
- <li class="span2">
-	 	blablalblblbl
-	<a href="#" class="btn primary">Order</a>
- </li>
-
- 
- 
- 
-
-      </ul>
-	  </div>
+		        <li class="span2">
+					<strong>Artwork Title</strong>
+		          <a href="#">
+		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+		          </a>
+				  <strong>45€</strong>
+				 <a href="#"><span class="label important">X</span>remove</a>
+		        </li>
+				 <li class="span2">
+					<strong>Artwork Title</strong>
+				   <a href="#">
+				     <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+				   </a>
+				  <strong>45€</strong>
+				 <a href="#"><span class="label important">X</span>remove</a>
+				 </li>
+				 <li class="span2">
+					 	blablalblblbl
+					<a href="#" class="btn primary">Order</a>
+				 </li>
+			 </ul>
+	    </div>
 	</div>
 
 		  
