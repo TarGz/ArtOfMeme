@@ -2,7 +2,7 @@
   	<div class="container">
   		<div id="topheader" class="row">
   	    	<div id="lang" class="span6 offset11 cartTop">
-			<ul class="country-nav" style="margin: 0 0 0 0;">
+			<ul class="country-nav">
 		        <li class="active"><a href="#">Fr €</a></li>
 		        <li><a href="#">Us $</a></li>
 		        <li><a href="#">Es €</a></li>
@@ -66,34 +66,36 @@
 <!-- CART -->
 	 <div class="cartzone">
 		 <a id="closecartbuton" class="close" href="#">x</a>
+		 <br/>
     	 <div class="container">
 			 <div class="row">
-		        <li class="span2 offset7">
-					<strong>Artwork Title</strong>
+		        <li class="span2 offset6">
+					Artwork Title
 		          <a href="#">
 		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
 		          </a>
-				  <strong>45€</strong>
+				  45€
 				<a href="#"><span class="label important">X</span>remove</a>
 		        </li>
 		        <li class="span2">
-					<strong>Artwork Title</strong>
+				Artwork Title
 		          <a href="#">
 		            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
 		          </a>
-				  <strong>45€</strong>
+				  45€
 				 <a href="#"><span class="label important">X</span>remove</a>
 		        </li>
 				 <li class="span2">
-					<strong>Artwork Title</strong>
+					Artwork Title
 				   <a href="#">
 				     <img class="thumbnail" src="http://placehold.it/90x90" alt="">
 				   </a>
-				  <strong>45€</strong>
+				  45€
 				 <a href="#"><span class="label important">X</span>remove</a>
 				 </li>
-				 <li class="span2">
-					 	blablalblblbl
+				 <li class="span3">
+					 	2 items in your cart
+						<h4>Total: 85€</h4>
 					<a href="#" class="btn primary">Order</a>
 				 </li>
 			 </ul></div>
@@ -102,7 +104,8 @@
 	<br/>
 <!-- /CART -->
 <!-- ARROW -->
-	<div class="container">
-		<div class="container-arrow"></div>
-	</div>
+
+		<div class="container">
+			<div class="container-arrow "></div>
+		</div>
 <!-- /ARROW -->

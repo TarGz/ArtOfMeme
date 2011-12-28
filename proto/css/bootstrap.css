@@ -2478,16 +2478,13 @@ body {
 .country-nav {
   border-color: #ddd;
   border-style: solid;
+  margin: 5px 0 -5px 0;
 }
-.country-nav ul, .country-nav ol {
-  margin: 0 0 0 0;
-}
-.country-nav > li {
+.country-nav li {
   position: relative;
-  margin-bottom: -1px;
   display: inline;
 }
-.country-nav > li > a {
+.country-nav li a {
   padding: 0 3px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
@@ -2495,14 +2492,19 @@ body {
   border-radius: 4px 4px 0 0;
   border: 1px solid #ddd;
 }
-.country-nav > li > a:hover {
+.country-nav li a:hover {
   text-decoration: none;
   background-color: #eee;
   border-color: #eee #eee #ddd;
 }
-.country-nav .active > a {
+.country-nav .active a {
   border: 1px solid #EFEFEF;
-  background-color: #222;
+  background-color: #333333;
+  color: #EFEFEF;
+}
+.country-nav .active a:hover {
+  border: 1px solid #EFEFEF;
+  background-color: #333333;
   color: #EFEFEF;
 }
 .cartzone {
@@ -2516,6 +2518,9 @@ body {
   -ms-transition: height .5s ease;
   -moz-transition: height .5s ease;
   -webkit-transition: height .5s ease;
+}
+.cartzone li {
+  color: #404040;
 }
 #closecartbuton {
   font-size: 22px;
@@ -2532,7 +2537,6 @@ body {
   float: left;
 }
 .navbar-arrow {
-  z-order: 13000;
   border-color: transparent  transparent white transparent ;
   border-style: solid;
   border-width: 10px;
@@ -2543,11 +2547,13 @@ body {
   margin-left: 840px;
 }
 .navbar-arrow.open {
-  z-order: 13000;
   border-color: transparent  transparent red transparent ;
 }
+#arrow-container {
+  background-color: red;
+  z-order: 28000;
+}
 .container-arrow {
-  z-order: 14000;
   border-color: transparent transparent white transparent ;
   border-style: solid;
   border-width: 10px;
@@ -2557,26 +2563,3 @@ body {
   width: 0;
   position: relative;
 }
-.cartBotom {
-  z-index: 12200;
-  margin-left: 660px;
-  position: absolute;
-  color: black;
-  height: 40px;
-  /*
-	overflow:hidden;
-	height:50px;
-			transition: height .5s ease;  
-		 -o-transition: height .5s ease;
-		-ms-transition: height .5s ease;  
-	   -moz-transition: height .5s ease; 
-    -webkit-transition: height .5s ease;  
-	*/
-
-}
-/*
-.cartBotom:hover{
-	background-color:@grey-cart;
-	height:300px;
-}
-*/

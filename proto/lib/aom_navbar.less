@@ -11,17 +11,14 @@
 .country-nav {
   border-color: #ddd;
   border-style: solid;
-  ul,ol{
-  	margin: 0 0 0 0;
-  }
-  > li {
+  margin: 5px 0 -5px 0;
+
+  li {
     position: relative; // For the dropdowns mostly
-    margin-bottom: -1px;
 	display: inline;
-    > a {
+	
+    a {
       padding: 0 3px;
-
-
       border: 1px solid transparent;
       .border-radius(4px 4px 0 0);
 	  border: 1px solid #ddd;
@@ -33,13 +30,16 @@
     }
   }
   // Active state, and it's :hover to override normal :hover
-  .active > a{
+  .active a{
 		border: 1px solid #EFEFEF;
-		background-color: #222;    
+		background-color: #333333;    
 	  	color:#EFEFEF;
-
+		&:hover{
+			border: 1px solid #EFEFEF;
+			background-color: #333333;    
+		  	color:#EFEFEF;
+		}
    }
-
 }
 
 
@@ -47,6 +47,7 @@
 
 
 .cartzone{
+	
 	position:relative;
 	margin-top:40px;
 	background-color: @cartcolor;
@@ -59,7 +60,9 @@
     -webkit-transition: height .5s ease;  
 	
 }
-
+.cartzone li{
+	color:@grayDark;
+}
 #closecartbuton{
 	font-size:22px;
 	margin-right:30px;
@@ -80,7 +83,6 @@
 
 // source http://jonrohan.me/guide/css/creating-triangles-in-css/
 .navbar-arrow {
-  z-order:13000;
   border-color:  transparent  transparent white transparent ;
   border-style: solid;
   border-width: 10px;
@@ -91,15 +93,15 @@
   margin-left:840px;
 }
 .navbar-arrow.open{
-  z-order:13000;
   border-color:  transparent  transparent red transparent ;
 }
 
+#arrow-container{
+	background-color:red;
+	 z-order:28000;
 
-
-
+}
 .container-arrow{
-	 z-order:14000;
     border-color:  transparent transparent white transparent ;
     border-style: solid;
     border-width: 10px;
@@ -111,28 +113,3 @@
 
 }
 
-
-.cartBotom{
-	z-index:12200;
-	margin-left:660px;
-	position:absolute;
-	color:black;
-	height:40px;
-	/*
-	overflow:hidden;
-	height:50px;
-			transition: height .5s ease;  
-		 -o-transition: height .5s ease;
-		-ms-transition: height .5s ease;  
-	   -moz-transition: height .5s ease; 
-    -webkit-transition: height .5s ease;  
-	*/
-	 	    
-	         
-}
-/*
-.cartBotom:hover{
-	background-color:@grey-cart;
-	height:300px;
-}
-*/
