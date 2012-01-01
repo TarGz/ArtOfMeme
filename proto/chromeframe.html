@@ -1,13 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Art Of MeMe</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="author" content="">
-
-	<!-- Chrome frame -->
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -25,13 +22,24 @@
     <script src="js/bootstrap-scrollspy.js"></script>
     <script src="js/bootstrap-tabs.js"></script>
     <script src="js/bootstrap-buttons.js"></script>
-	<script src="js/artofmeme.js"></script>
     
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    
+	<script>
 	
+window.onload = function(){
+	//bindhover();
+	//bindout();
+	bindclick();
+	open = false; 
+}
+</script>
 
-	
+   
+    <style type="text/css">
+
+    </style>
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -39,3 +47,37 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
+
+  <body>
+	  
+  <!--[if IE]>
+    <script type="text/javascript" 
+     src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+
+    <style>
+     .chromeFrameInstallDefaultStyle {
+       width: 100%; /* default is 800px */
+       border: 5px solid blue;
+     }
+    </style>
+
+    <div id="prompt">
+     <!-- if IE without GCF, prompt goes here -->
+    </div>
+ 
+    <script>
+     // The conditional ensures that this code will only execute in IE,
+     // Therefore we can use the IE-specific attachEvent without worry
+     window.attachEvent("onload", function() {
+       CFInstall.check({
+         mode: "inline", // the default
+         node: "prompt"
+       });
+     });
+    </script>
+  <![endif]-->
+
+
+	  
+  </body>
+</html>

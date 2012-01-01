@@ -2464,10 +2464,15 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
 /* aom.less
- * ArtOfMeme variables
+ * ArtOfMeme setup
  * ------------------------------------------------------------- */
 body {
   padding-top: 0px;
+}
+/* Chrome frame */
+#chromeFrameOverlayContent {
+  z-index: 26000;
+  top: 500px;
 }
 /* aom_navbar.less
  * Base styles for various input types, form layouts, and states
@@ -2478,14 +2483,14 @@ body {
 .country-nav {
   border-color: #ddd;
   border-style: solid;
-  margin: 5px 0 -5px 0;
+  margin: 12px 0 0px 0;
 }
 .country-nav li {
   position: relative;
   display: inline;
 }
 .country-nav li a {
-  padding: 0 3px;
+  padding: 4px 8px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -2498,19 +2503,19 @@ body {
   border-color: #eee #eee #ddd;
 }
 .country-nav .active a {
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   background-color: #333333;
-  color: #EFEFEF;
+  color: #efefef;
 }
 .country-nav .active a:hover {
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   background-color: #333333;
   color: #EFEFEF;
 }
 .cartzone {
   position: relative;
   margin-top: 40px;
-  background-color: grey;
+  background-color: #808080;
   overflow: hidden;
   height: 0px;
   transition: height .5s ease;
@@ -2530,7 +2535,7 @@ body {
 .blockcart {
   position: absolute;
   height: 50px;
-  background-color: grey;
+  background-color: #808080;
   color: #EFEFEF;
 }
 .user {
@@ -2544,7 +2549,7 @@ body {
   height: 0;
   width: 0;
   position: relative;
-  margin-left: 840px;
+  margin-left: 870px;
 }
 .navbar-arrow.open {
   border-color: transparent  transparent red transparent ;
@@ -2557,9 +2562,17 @@ body {
   border-color: transparent transparent white transparent ;
   border-style: solid;
   border-width: 10px;
-  margin-top: -38px;
-  margin-left: 840px;
+  margin-top: -20px;
+  margin-left: 870px;
   height: 0;
   width: 0;
   position: relative;
+}
+#maincontainer {
+  margin-top: 20px;
+}
+.msg-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }

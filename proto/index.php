@@ -13,15 +13,6 @@
 
     <div class="container">
 
-        
-        <div class="alert-message warning">
-          <a class="close" href="#">×</a>
-          <p><strong>Holy guacamole!</strong> <br>We'd like to set these regional settings for you: English (US), $ United States Dollar USD, United States</p>
-          <div class="alert-actions">
-                <a class="btn small" href="#">Ok</a> <a class="btn small" href="#">No thanks</a>
-           </div>
-        </div>
-
 
 
       <!-- Main hero unit for a primary marketing message or call to action -->
