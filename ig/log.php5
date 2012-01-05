@@ -13,7 +13,6 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
 	<script src="js/ig.js"></script>
     <style type="text/css">
       /* Override some defaults */
@@ -93,91 +92,13 @@
         <div class="row">
           <div class="span10">
             <h2>Wich picture do you like the best ?</h2>
-			
-			<?php 
-			$code = $_GET["code"];
-			if(!$code){
-			?>
-			<a href="https://api.instagram.com/oauth/authorize/?client_id=8b13b2e6e114486388c1e86a69835ad8&redirect_uri=http://www.artofmeme.com/ig/&response_type=code&scope=likes">Log</a>
-			
-			
-			
-			
-			
-			<?php
-			// LOGGED
-			}else{
-			
-			?>
-				<strong>LOGGED</strong>
-			
-			<?php
-			
-				// oAUTH
-				$url = 'https://api.instagram.com/oauth/access_token';
-				$fields = array(
-				            'client_id'=>'8b13b2e6e114486388c1e86a69835ad8',
-				            'client_secret'=>'25bdb363a14a4ed7b60e4f2fd4d6c53d',
-				            'grant_type'=>'authorization_code',
-				            'redirect_uri'=>'http://www.artofmeme.com/ig/',
-				            'code'=>$code
-				        );
-				//open connection
-				$ch = curl_init();
-				//set the url, number of POST vars, POST data
-				curl_setopt($ch,CURLOPT_URL,$url);
-				curl_setopt($ch,CURLOPT_FRESH_CONNECT,'1');
-				curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
-				curl_setopt($ch,CURLOPT_POST,count($fields));
-				curl_setopt($ch,CURLOPT_POSTFIELDS,$fields);
-	
-				//execute post
-				$result = curl_exec($ch);
-
-				//close connection
-				curl_close($ch);
-	
-				$json = json_decode($result);
-				$access_token = $json->{'access_token'};
-				echo $access_token; 
-				
-				include('vote.php5');
-			}
-
-			?>
-			
-			<script>
-			function like(id,token){
-				console.log("id"+id);
-				console.log("token"+token);
-				//$('#msg-container').load('like.php?id='+id);
-				
-
-				var request = $.ajax({
-				  url: "like.php5",
-				  type: "GET",
-				  data: {
-					  	id : id,
-					  	t : token
-					},
-				  dataType: "html"
-				});
-
-				request.done(function(msg) {
-				 console.log(msg)
-				});
-			}
-			</script>
-			
-			
-			<div id="img"></div>
+			<a href="log.php5">Log</a>
           </div>
           <div class="span4">
             <h3>How to participate ?</h3>
           </div>
         </div>
       </div>
-	  
 
       <footer>
         <p>&copy; ArtOfMeme 2012</p>
