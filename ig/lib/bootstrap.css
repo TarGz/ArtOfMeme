@@ -2471,6 +2471,3 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .likes-hide {
   display: none;
 }
-.nextbtn {
-  display: none;
-}

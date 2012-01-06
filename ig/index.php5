@@ -1,3 +1,63 @@
+<?
+
+
+
+
+			$code = $_GET["code"];
+			
+			
+			if($code){	
+				// oAUTH
+				$url = 'https://api.instagram.com/oauth/access_token';
+				$fields = array(
+				            'client_id'=>'8b13b2e6e114486388c1e86a69835ad8',
+				            'client_secret'=>'25bdb363a14a4ed7b60e4f2fd4d6c53d',
+				            'grant_type'=>'authorization_code',
+				            'redirect_uri'=>'http://www.artofmeme.com/ig/',
+				            'code'=>$code
+				        );
+				//open connection
+				$ch = curl_init();
+				//set the url, number of POST vars, POST data
+				curl_setopt($ch,CURLOPT_URL,$url);
+				curl_setopt($ch,CURLOPT_FRESH_CONNECT,'1');
+				curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
+				curl_setopt($ch,CURLOPT_POST,count($fields));
+				curl_setopt($ch,CURLOPT_POSTFIELDS,$fields);
+	
+				//execute post
+				$result = curl_exec($ch);
+
+				//close connection
+				curl_close($ch);
+	
+				$json = json_decode($result);
+				$access_token = $json->{'access_token'};
+				
+				setcookie("ig", $access_token, time()+3600);
+				
+
+			}else{
+				if($_COOKIE["ig"] && $_COOKIE["ig"] != "logout") $access_token = $_COOKIE["ig"];
+			}
+
+	if($_GET["logout"] == 1){
+		
+		setcookie("ig", 'logout', time()+3600);
+		$access_token = null;
+		echo "logout";
+			
+	}
+	
+	
+	echo "ttt".$access_token;
+	echo "ccccc".$_COOKIE["ig"];
+				
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,6 +140,19 @@
       <div class="fill">
         <div class="container">
           <a class="brand" href="#">#Pictmatch</a>
+		<?php 
+			
+
+			
+
+			
+		if( $access_token ){
+			echo "<a href=?logout=1>Logout</a>";
+		}else{
+			echo "<a href=https://api.instagram.com/oauth/authorize/?client_id=8b13b2e6e114486388c1e86a69835ad8&redirect_uri=http://www.artofmeme.com/ig/&response_type=code&scope=likes>Log</a>";
+			
+		}
+		  ?>
         </div>
       </div>
     </div>
@@ -89,65 +162,27 @@
       <div class="content">
         <div class="page-header">
           <h1>Instagram Picture match</h1>
+		  <iframe src="http://followgram.me/targz/widget" style="height:27px;" frameborder="0"></iframe>
         </div>
         <div class="row">
           <div class="span10">
             <h2>Wich picture do you like the best ?</h2>
 			
-			<?php 
-			$code = $_GET["code"];
-			if(!$code){
-			?>
-			<a href="https://api.instagram.com/oauth/authorize/?client_id=8b13b2e6e114486388c1e86a69835ad8&redirect_uri=http://www.artofmeme.com/ig/&response_type=code&scope=likes">Log</a>
 			
-			
-			
-			
-			
-			<?php
-			// LOGGED
-			}else{
-			
-			?>
-				<strong>LOGGED</strong>
-			
-			<?php
-			
-				// oAUTH
-				$url = 'https://api.instagram.com/oauth/access_token';
-				$fields = array(
-				            'client_id'=>'8b13b2e6e114486388c1e86a69835ad8',
-				            'client_secret'=>'25bdb363a14a4ed7b60e4f2fd4d6c53d',
-				            'grant_type'=>'authorization_code',
-				            'redirect_uri'=>'http://www.artofmeme.com/ig/',
-				            'code'=>$code
-				        );
-				//open connection
-				$ch = curl_init();
-				//set the url, number of POST vars, POST data
-				curl_setopt($ch,CURLOPT_URL,$url);
-				curl_setopt($ch,CURLOPT_FRESH_CONNECT,'1');
-				curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
-				curl_setopt($ch,CURLOPT_POST,count($fields));
-				curl_setopt($ch,CURLOPT_POSTFIELDS,$fields);
-	
-				//execute post
-				$result = curl_exec($ch);
-
-				//close connection
-				curl_close($ch);
-	
-				$json = json_decode($result);
-				$access_token = $json->{'access_token'};
-				echo $access_token; 
-				
-				include('vote.php5');
+			<div id="votecontainer">
+				<div id="loadcontainer">
+			<?
+			echo "t=".$access_token;
+			if( $access_token  ){
+			include('vote.php5');
 			}
-
 			?>
-			
 			<script>
+			
+			
+			
 			function like(id,token){
+				metoken = token;
 				console.log("id"+id);
 				console.log("token"+token);
 				//$('#msg-container').load('like.php?id='+id);
@@ -164,13 +199,33 @@
 				});
 
 				request.done(function(msg) {
-				 console.log(msg)
+					console.log("done");
+				 	//console.log(msg);
+					displayResult();
 				});
+			}
+			function displayResult(){
+				console.log($('.nextbtn') );
+				$('.likes-hide').removeClass("likes-hide");
+				$('.nextbtn').removeClass("nextbtn");				
+
+				
+				
+			}
+			
+			function next(){
+				console.log("next !"+metoken);
+				console.log($("#loadcontainer"));
+				//$("#loadcontainer").remove();
+				$('.nextbtn').css(".nextbtn");
+				$('#loadcontainer').load('vote.php5?t='+metoken);
 			}
 			</script>
 			
 			
-			<div id="img"></div>
+			</div></div>
+			
+			<a target="_blank" href="javascript:next();" class="btn primary nextbtn">Next vote »</a>
           </div>
           <div class="span4">
             <h3>How to participate ?</h3>

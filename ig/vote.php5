@@ -1,4 +1,10 @@
 <?php
+
+if(!$access_token){
+	$access_token = $_GET["t"];
+}
+
+
 				// Load tags
 				$ch = curl_init();
 				$url = 'https://api.instagram.com/v1/tags/tiltshift/media/recent?access_token='.$access_token;
@@ -13,21 +19,27 @@
 				//var_dump($json);
 				$data = $json->{'data'};
 				$array_length = count($data);
-		
+				
+				echo '<ul class="media-grid">';
+				
 				for ($i = 1; $i <= 2; $i++) {
 					
 					$rand = rand(0, $array_length-1);
 					
-		    		echo  $rand."<br/>";
+		    		//echo  $rand."<br/>";
 					
 					$dat = $data[$rand];
 					$id =  $dat->{'id'};
-					$img = $dat->{'images'}->{'thumbnail'}->{'url'};
+					$likes =  $dat->{'likes'}->{'count'};
+					$img = $dat->{'images'}->{'standard_resolution'}->{'url'};
 					$url = 'https://api.instagram.com/v1/media/'.$id.'/likes';
 					
 					
 					
-					echo '<p><a href=javascript:like("'.$id.'","'.$access_token.'")><img src="'.$img.'" / ></a></p>';
+					echo '<li><a href=javascript:like("'.$id.'","'.$access_token.'")><img width="200" height="200" src="'.$img.'" / > <span class="likes-hide">likes :: '.$likes.'</span></a></li>';
 					
 				}
+				
+				echo '</ul>';
 ?>
+
