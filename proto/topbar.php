@@ -1,3 +1,6 @@
+<!-- ANIM PANIER -->
+<div class="animInsert"></div>
+
 <!-- COUNTRY -->
 <div class="container">
 	<div id="topheader" class="row">

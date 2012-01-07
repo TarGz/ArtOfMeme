@@ -49,7 +49,7 @@
 					            </div>
 					          </div>
 							<br />
-                      <a class="btn primary large">Add to cart</a>
+                      <a id="addtocart" class="btn primary large">Add to cart</a>
             </div>
            
           </div>
