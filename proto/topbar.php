@@ -55,37 +55,24 @@
 	 <a id="closecartbuton" class="close" href="#">x</a>
 	 <br/>
 	 <div class="container">
-		 <div class="row">
-	        <li class="span2 offset6">
-				Artwork Title
-	          <a href="#">
+		 <div id="cartItem">
+			 
+	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+	        <li class="cartItem">
 	            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-	          </a>
-			  45€
-			<a href="#"><span class="label important">X</span>remove</a>
 	        </li>
-	        <li class="span2">
-			Artwork Title
-	          <a href="#">
-	            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-	          </a>
-			  45€
-			 <a href="#"><span class="label important">X</span>remove</a>
-	        </li>
-			 <li class="span2">
-				Artwork Title
-			   <a href="#">
-			     <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-			   </a>
-			  45€
-			 <a href="#"><span class="label important">X</span>remove</a>
-			 </li>
-			 <li class="span3">
-				 	2 items in your cart
-					<h4>Total: 85€</h4>
-				<a href="#" class="btn primary">Order</a>
-			 </li>
-		 </ul></div>
+		 </div>
+
+
+		
+		<div id="targetanim" class="cartItem"></div>
+		 <div class="cartItem cartOrder">
+			 	2 items in your cart
+				<h4>Total: 85€</h4>
+			<a href="#" class="btn primary">Order</a>
+
+		 </div>
+
     </div>
 </div>
 <!-- ARROW -->

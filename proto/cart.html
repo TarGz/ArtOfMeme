@@ -33,7 +33,34 @@ window.onload = function(){
 	//bindout();
 	bindclick();
 	open = false; 
+    requestAnimFrame(function(){
+        animate();
+    });
+
 }
+
+window.requestAnimFrame = (function(callback){
+    return window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function(callback){
+        window.setTimeout(callback, 3000 / 1);
+    };
+})();
+ 
+function animate(){
+   	console.log('lalal');
+ 
+    // draw
+ 
+    // request new frame
+
+}
+ 
+
+
 
 function bindclick(){
 

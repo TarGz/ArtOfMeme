@@ -2558,6 +2558,14 @@ body {
   background-color: red;
   z-order: 28000;
 }
+.cartItem {
+  display: inline-block;
+  float: left;
+  padding: 10px 10px 10px 10px;
+}
+.cartOrder {
+  float: right;
+}
 .container-arrow {
   border-color: transparent transparent white transparent ;
   border-style: solid;
@@ -2581,21 +2589,4 @@ body {
   background-color: red;
   position: absolute;
   z-index: 30000;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding-top: 850px;
-  padding-left: 900px;
-  transition: padding-top 0.5s ease;
-  -o-transition: padding-top 0.5s ease;
-  -ms-transition: padding-top 0.5s ease;
-  -moz-transition: padding-top 0.5s ease;
-  -webkit-transition: padding-top 0.5s ease;
-  transition: padding-left 0.5s ease;
-  -o-transition: padding-left 0.5s ease;
-  -ms-transition: padding-left 0.5s ease;
-  -moz-transition: padding-left 0.5s ease;
-  -webkit-transition: padding-left 0.5s ease;
-}
-.cartAnimImageMove {
-  background-color: blue;
 }
