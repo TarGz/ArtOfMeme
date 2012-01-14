@@ -1,61 +1,38 @@
 <?
+$code = $_GET["code"];			
+if($code){	
+	// oAUTH
+	$url = 'https://api.instagram.com/oauth/access_token';
+	$fields = array(
+	            'client_id'=>'8b13b2e6e114486388c1e86a69835ad8',
+	            'client_secret'=>'25bdb363a14a4ed7b60e4f2fd4d6c53d',
+	            'grant_type'=>'authorization_code',
+	            'redirect_uri'=>'http://www.artofmeme.com/ig/',
+	            'code'=>$code
+	        );
+	//open connection
+	$ch = curl_init();
+	//set the url, number of POST vars, POST data
+	curl_setopt($ch,CURLOPT_URL,$url);
+	curl_setopt($ch,CURLOPT_FRESH_CONNECT,'1');
+	curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
+	curl_setopt($ch,CURLOPT_POST,count($fields));
+	curl_setopt($ch,CURLOPT_POSTFIELDS,$fields);
+	//execute post
+	$result = curl_exec($ch);
+	//close connection
+	curl_close($ch);
+	$json = json_decode($result);
+	$access_token = $json->{'access_token'};
+	setcookie("ig", $access_token, time()+3600);
+}else{
+	if($_COOKIE["ig"] && $_COOKIE["ig"] != "logout") $access_token = $_COOKIE["ig"];
+}
 
-
-
-
-			$code = $_GET["code"];
-			
-			
-			if($code){	
-				// oAUTH
-				$url = 'https://api.instagram.com/oauth/access_token';
-				$fields = array(
-				            'client_id'=>'8b13b2e6e114486388c1e86a69835ad8',
-				            'client_secret'=>'25bdb363a14a4ed7b60e4f2fd4d6c53d',
-				            'grant_type'=>'authorization_code',
-				            'redirect_uri'=>'http://www.artofmeme.com/ig/',
-				            'code'=>$code
-				        );
-				//open connection
-				$ch = curl_init();
-				//set the url, number of POST vars, POST data
-				curl_setopt($ch,CURLOPT_URL,$url);
-				curl_setopt($ch,CURLOPT_FRESH_CONNECT,'1');
-				curl_setopt($ch,CURLOPT_RETURNTRANSFER,'1');
-				curl_setopt($ch,CURLOPT_POST,count($fields));
-				curl_setopt($ch,CURLOPT_POSTFIELDS,$fields);
-	
-				//execute post
-				$result = curl_exec($ch);
-
-				//close connection
-				curl_close($ch);
-	
-				$json = json_decode($result);
-				$access_token = $json->{'access_token'};
-				
-				setcookie("ig", $access_token, time()+3600);
-				
-
-			}else{
-				if($_COOKIE["ig"] && $_COOKIE["ig"] != "logout") $access_token = $_COOKIE["ig"];
-			}
-
-	if($_GET["logout"] == 1){
-		
-		setcookie("ig", 'logout', time()+3600);
-		$access_token = null;
-		echo "logout";
-			
-	}
-	
-	
-	echo "ttt".$access_token;
-	echo "ccccc".$_COOKIE["ig"];
-				
-
-
-
+if($_GET["logout"] == 1){
+	setcookie("ig", 'logout', time()+3600);
+	$access_token = null;			
+}
 ?>
 
 <!DOCTYPE html>
@@ -139,18 +116,12 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#">#Pictmatch</a>
+          <a class="brand" href="#">#instamatch</a>
 		<?php 
-			
-
-			
-
-			
 		if( $access_token ){
-			echo "<a href=?logout=1>Logout</a>";
+			echo '<p class="pull-right"><a href="?logout=1">Logout</a></p>';
 		}else{
-			echo "<a href=https://api.instagram.com/oauth/authorize/?client_id=8b13b2e6e114486388c1e86a69835ad8&redirect_uri=http://www.artofmeme.com/ig/&response_type=code&scope=likes>Log</a>";
-			
+			echo '<p class="pull-right"><a href="https://api.instagram.com/oauth/authorize/?client_id=8b13b2e6e114486388c1e86a69835ad8&redirect_uri=http://www.artofmeme.com/ig/&response_type=code&scope=likes">Login with instagram	</a></p>';
 		}
 		  ?>
         </div>
@@ -174,7 +145,9 @@
 			<?
 			echo "t=".$access_token;
 			if( $access_token  ){
-			include('vote.php5');
+				include('vote.php5');
+			}else{
+				include('intro.php5');
 			}
 			?>
 			<script>
@@ -218,7 +191,7 @@
 				console.log($("#loadcontainer"));
 				//$("#loadcontainer").remove();
 				$('.nextbtn').css(".nextbtn");
-				$('#loadcontainer').load('vote.php5?t='+metoken);
+				$('#loadcontainer').load('vote.php5');
 			}
 			</script>
 			
