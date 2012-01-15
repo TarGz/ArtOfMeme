@@ -54,24 +54,21 @@
  <div class="cartzone">
 	 <a id="closecartbuton" class="close" href="#">x</a>
 	 <br/>
-	 <div class="container">
-		 <div id="cartItem">
-			 
-	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
-	        <li class="cartItem">
-	            <img class="thumbnail" src="http://placehold.it/90x90" alt="">
-	        </li>
-		 </div>
-
-
-		
-		<div id="targetanim" class="cartItem"></div>
-		 <div class="cartItem cartOrder">
+	 <div id="cartCcontainer">
+		 <div id="cartOrder">
 			 	2 items in your cart
 				<h4>Total: 85€</h4>
 			<a href="#" class="btn primary">Order</a>
 
 		 </div>
+
+		 <div id="cartItems"> 
+	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+ 		   	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+  		  	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+		 </div>
+
+
 
     </div>
 </div>
