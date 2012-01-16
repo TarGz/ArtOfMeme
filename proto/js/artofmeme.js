@@ -47,9 +47,12 @@ function isMSIE() {
 /** NAVIGATION **/
 function bindclick(){
 	cartIsOpen = false; 
-	$('#closecartbuton').click(	function()  {butonclick();});
-	$('#cartbouton').click(	   	function()  {butonclick();});
+
+	$('#closecartbuton').click(	function() {butonclick();});
+	$('#cartbouton').click(	   	function() {butonclick();});
+	
 	$('#addtocart').click(	   	function(e) {addtocart(e);});
+
 }
 
 /** cart open & close **/
@@ -69,6 +72,7 @@ function closeCart(){
 	cartIsOpen=false;
 	$(".cartzone").height("0px");
 	setTimeout('cleararrow()',500);
+	
 }
 
 function cleararrow(){
@@ -85,7 +89,9 @@ function addtocart(e){
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
 	setAnimationProperty($('.cartAnimImage'),"duration","3s");
 	// Add real item to cart
-	$('#cartItems').append('<li class="tmpcartItem" style="visibility:visible"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>');
+	$('#cartItems').append('<li class="tmpcartItem" style="visibility:hidden"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>');
+	// Page scroll
+	//$(this).scrollTop(0);
 	// Timer
     requestAnimFrame(function(){
         addtocartCallback(e);
@@ -94,20 +100,30 @@ function addtocart(e){
 }
 
 function addtocartCallback(e){
+	
 	var offset = $('.tmpcartItem').offset();
 	offset.top = offset.top - 80;
+	
 	$('.cartAnimImage').css(offset);
+	
 	jQuery("html, body").stop().animate({
           'scrollTop': 0
         }, 2000, 'swing', function() {
           //window.location.hash = target;
         });
+
+
+	
 	window.setTimeout(function() {
 	 addtocartEndAnim();
 	}, 3000);
+
+	
+	
 }
 
 function addtocartEndAnim(){
+
 	var item = $('.tmpcartItem')
 	item.css("visibility","visible");
 	item.removeClass('tmpcartItem').addClass('cartItem');
