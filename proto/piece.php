@@ -18,8 +18,6 @@
           <li class="active">Piece N</li>
         </ul>
 
-
-
       <!-- Main hero unit for a primary marketing message or call to action -->
 
         <img class="thumbnail" src="http://placehold.it/940x330" alt="">

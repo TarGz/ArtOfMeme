@@ -20,6 +20,7 @@ window.requestAnimFrame = (function(callback){
     window.msRequestAnimationFrame ||
     function(callback){
         window.setTimeout(callback, 17);
+        offset
     };
 })();
 
@@ -45,31 +46,29 @@ function isMSIE() {
 
 /** NAVIGATION **/
 function bindclick(){
-	open = false; 
-	$('#closecartbuton').mouseup(	function() {butonclick();});
-	$('#cartbouton').mouseup(	   	function() {butonclick();});
-	
-	$('#addtocart').mouseup(	   	function(e) {addtocart(e);});
+	cartIsOpen = false; 
+	$('#closecartbuton').click(	function()  {butonclick();});
+	$('#cartbouton').click(	   	function()  {butonclick();});
+	$('#addtocart').click(	   	function(e) {addtocart(e);});
 }
 
 /** cart open & close **/
 function butonclick(){
-  if(open == false){
+  if(cartIsOpen == false){
 	 	 openCart();
 	 }else{
 		 closeCart();
 	}
 }
 function openCart(){
-	 open=true;
+	 cartIsOpen=true;
 	 $(".cartzone").height("200px");
 	 $(".navbar-arrow").css("border-color",  "transparent  transparent grey transparent");
 }
 function closeCart(){
-	open=false;
+	cartIsOpen=false;
 	$(".cartzone").height("0px");
 	setTimeout('cleararrow()',500);
-	
 }
 
 function cleararrow(){
@@ -86,9 +85,7 @@ function addtocart(e){
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
 	setAnimationProperty($('.cartAnimImage'),"duration","3s");
 	// Add real item to cart
-	$('#cartItems').append('<li class="tmpcartItem" style="visibility:hidden"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>');
-	// Page scroll
-	//$(this).scrollTop(0);
+	$('#cartItems').append('<li class="tmpcartItem" style="visibility:visible"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>');
 	// Timer
     requestAnimFrame(function(){
         addtocartCallback(e);
@@ -97,30 +94,49 @@ function addtocart(e){
 }
 
 function addtocartCallback(e){
-	//$('.cartAnimImage').addClass("cartAnimImageMove");
-	
 	var offset = $('.tmpcartItem').offset();
 	offset.top = offset.top - 80;
-	
-	console.log('addtocartCallback');
-	console.log(offset);
 	$('.cartAnimImage').css(offset);
-	
-	
+	jQuery("html, body").stop().animate({
+          'scrollTop': 0
+        }, 2000, 'swing', function() {
+          //window.location.hash = target;
+        });
 	window.setTimeout(function() {
 	 addtocartEndAnim();
 	}, 3000);
-	
-	
 }
 
 function addtocartEndAnim(){
-	console.log('addtocartEndAnim');
 	var item = $('.tmpcartItem')
 	item.css("visibility","visible");
 	item.removeClass('tmpcartItem').addClass('cartItem');
 	$('.animInsert').children().remove();
 }
 
+
+/*
+Scroll to
+
+jQuery("html, body").stop().animate({
+          'scrollTop': 0
+        }, 500, 'swing', function() {
+          //window.location.hash = target;
+        });
+
+Transition end event 
+var transEndEventNames = {
+    'WebkitTransition' : 'webkitTransitionEnd',
+    'MozTransition'    : 'transitionend',
+    'OTransition'      : 'oTransitionEnd',
+    'msTransition'     : 'msTransitionEnd', // maybe?
+    'transition'       : 'transitionEnd'
+};
+var transEndEventName = transEndEventNames[ Modernizr.prefixed('transition') ];
+
+jQuery('monitem').bind(transEndEventName,function(e){
+//callback
+})
+*/
 
 
