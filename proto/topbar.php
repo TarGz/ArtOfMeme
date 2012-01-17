@@ -63,9 +63,9 @@
 		 </div>
 
 		 <div id="cartItems"> 
-	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
- 		   	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
-  		  	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
+ 		   	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
+  		  	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
 		 </div>
 
 
