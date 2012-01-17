@@ -54,11 +54,14 @@ function bindclick(){
 
 /** cart open & close **/
 function butonclick(){
+	/*
   if(cartIsOpen == false){
 	 	 openCart();
 	 }else{
 		 closeCart();
 	}
+	*/
+	cartIsOpen == false ? openCart() : closeCart();
 }
 function openCart(){
 	 cartIsOpen=true;
@@ -117,6 +120,8 @@ function addtocartEndAnim(){
 
 /*
 Scroll to
+
+aze aze aze ljkaz lejkljakz
 
 jQuery("html, body").stop().animate({
           'scrollTop': 0
