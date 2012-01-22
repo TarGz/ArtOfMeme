@@ -57,11 +57,7 @@ function bindclick(){
 
 /** cart open & close **/
 function butonclick(){
-  if(cartIsOpen == false){
-	 	 openCart();
-	 }else{
-		 closeCart();
-	}
+	cartIsOpen == false ? openCart() : closeCart();
 }
 function openCart(){
 	 cartIsOpen=true;
@@ -74,7 +70,6 @@ function closeCart(){
 	setTimeout('cleararrow()',500);
 	
 }
-
 function cleararrow(){
 	$(".navbar-arrow").css("border-color",  "transparent  transparent white transparent");
 }
@@ -84,11 +79,12 @@ function addtocart(e){
 	// Start point
 	var offset = $('#'+e.currentTarget.id).offset();
 	$('.animInsert').append('<img class="thumbnail cartAnimImage cartItem" src="http://placehold.it/120x120" alt="">');
-	// Set position
+
 	$('.cartAnimImage').css(offset);
 	// CSS animation
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
-	setAnimationProperty($('.cartAnimImage'),"duration","2s");
+	setAnimationProperty($('.cartAnimImage'),"duration","1.5s");
+
 	// Add real item to cart
 	$('#cartItems').append('<li class="tmpcartItem" style="visibility:hidden"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>');
 	// Timer
@@ -113,8 +109,7 @@ function addtocartCallback(e){
 
 	window.setTimeout(function() {
 	 addtocartEndAnim();
-	}, 2000);
-	
+	}, 1500);
 }
 
 function addtocartEndAnim(){
@@ -128,6 +123,8 @@ function addtocartEndAnim(){
 
 /*
 Scroll to
+
+aze aze aze ljkaz lejkljakz
 
 jQuery("html, body").stop().animate({
           'scrollTop': 0
