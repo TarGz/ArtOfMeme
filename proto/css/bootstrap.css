@@ -988,8 +988,8 @@ textarea[readonly] {
   border-radius: 3px 0 0 3px;
 }
 .input-prepend .active, .input-append .active {
-  background: #a9dba9;
-  border-color: #46a546;
+  background: #4ef9eb;
+  border-color: #06a89b;
 }
 .input-prepend .add-on {
   *margin-top: 1px;
@@ -1263,11 +1263,11 @@ table .headerSortUp.blue, table .headerSortDown.blue {
   background-color: #ade6fe;
 }
 table .green {
-  color: #46a546;
-  border-bottom-color: #46a546;
+  color: #06a89b;
+  border-bottom-color: #06a89b;
 }
 table .headerSortUp.green, table .headerSortDown.green {
-  background-color: #cdeacd;
+  background-color: #80faf1;
 }
 table .red {
   color: #9d261d;
@@ -1307,7 +1307,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 1000;
   overflow: visible;
 }
 .topbar a {
@@ -1434,8 +1434,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-decoration: none;
 }
 .topbar div > ul .active > a, .nav .active > a {
-  background-color: #222;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #06a89b;
 }
 .topbar div > ul.secondary-nav, .nav.secondary-nav {
   float: right;
@@ -1909,18 +1908,18 @@ footer {
 }
 .btn.primary {
   color: #ffffff;
-  background-color: #0064cd;
+  background-color: #08726b;
   background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
-  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
-  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
-  background-image: linear-gradient(top, #049cdb, #0064cd);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#049cdb', endColorstr='#0064cd', GradientType=0);
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#06a89b), to(#08726b));
+  background-image: -moz-linear-gradient(top, #06a89b, #08726b);
+  background-image: -ms-linear-gradient(top, #06a89b, #08726b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #06a89b), color-stop(100%, #08726b));
+  background-image: -webkit-linear-gradient(top, #06a89b, #08726b);
+  background-image: -o-linear-gradient(top, #06a89b, #08726b);
+  background-image: linear-gradient(top, #06a89b, #08726b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#06a89b', endColorstr='#08726b', GradientType=0);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: #0064cd #0064cd #003f81;
+  border-color: #08726b #08726b #032b28;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn.active, .btn:active {
@@ -2421,7 +2420,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background-color: #f89406;
 }
 .label.success {
-  background-color: #46a546;
+  background-color: #06a89b;
 }
 .label.notice {
   background-color: #62cffc;
@@ -2598,7 +2597,12 @@ body {
 }
 .cartAnimImage {
   clear: both;
-  background-color: red;
+  background-color: #06a89b;
   position: absolute;
   z-index: 30000;
+}
+.header_logo {
+  position: absolute;
+  float: left;
+  display: block;
 }

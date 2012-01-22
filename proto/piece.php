@@ -20,7 +20,7 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
 
-        <img class="thumbnail" src="http://placehold.it/940x330" alt="">
+        <!--img class="thumbnail" src="http://placehold.it/940x330" alt=""-->
 
 
         
@@ -41,8 +41,9 @@
 					            <label for="stackedSelect">Select you size dude</label>
 					            <div class="input">
 					              <select name="stackedSelect" id="stackedSelect">
-					                <option>A4</option>
-					                <option>A3</option>
+					                <option>SMALL  (A4:210x297 mm)</option>
+					                <option>MEDIUM (A3:297x420 mm)</option>
+                          <option>BOSS (A2:420x494 mm)</option>
 					              </select>
 					            </div>
 					          </div>

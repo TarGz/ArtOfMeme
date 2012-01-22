@@ -19,9 +19,13 @@
   <div class="fill">
 	<div class="panel">
     	<div class="container">
-		  <a class="brand" href="index.php">Art Of MeMe</a>
+			<a class="brand" href="index.php">Art Of MeMe</a>
+		 
+		 <!--span class="span5"><a  href="index.php"><img class="header_logo" src="img/logo.png" /></a></span-->
+
 		  <ul class="nav">
-		    <li><a href="memes.php">Memes</a></li>
+
+		    <li class="active"><a href="memes.php">Memes</a></li>
 		    <li><a href="artists.php">Artists</a></li>
 			<li class="dropdown" data-dropdown="dropdown" >
 			    <a href="#" class="dropdown-toggle">Shop</a>
@@ -44,7 +48,7 @@
 		    <li><a href="blog.php">blog</a></li>
 		    <li><a href="about.php">about</a></li>
 		  </ul>
-		  <p id="cartbouton" class="pull-right">Logged in as <a href="#">username</a></p>
+		  <p id="cartbouton" class="pull-right">hey  <a href="#">Julien</a> welcome back</p>
 		  <div id="navbar-arrow" class="navbar-arrow"></div>
     	</div>
   	</div>
@@ -63,9 +67,9 @@
 		 </div>
 
 		 <div id="cartItems"> 
-	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
- 		   	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
-  		  	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>
+	        <li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
+ 		   	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
+  		  	<li class="cartItem"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
 		 </div>
 
 

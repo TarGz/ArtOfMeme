@@ -1,6 +1,6 @@
 
 
-// DOCUMENT READY
+/** DOCUMENT READY **/
 $(document).ready(function () {
 	
     if(isMSIE()){
@@ -83,15 +83,14 @@ function addtocart(e){
 	openCart();
 	// Start point
 	var offset = $('#'+e.currentTarget.id).offset();
-	$('.animInsert').append('<img class="thumbnail cartAnimImage cartItem" src="http://placehold.it/90x90" alt="">');
+	$('.animInsert').append('<img class="thumbnail cartAnimImage cartItem" src="http://placehold.it/120x120" alt="">');
+	// Set position
 	$('.cartAnimImage').css(offset);
 	// CSS animation
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
-	setAnimationProperty($('.cartAnimImage'),"duration","3s");
+	setAnimationProperty($('.cartAnimImage'),"duration","2s");
 	// Add real item to cart
-	$('#cartItems').append('<li class="tmpcartItem" style="visibility:hidden"><img class="thumbnail" src="http://placehold.it/90x90" alt=""> </li>');
-	// Page scroll
-	//$(this).scrollTop(0);
+	$('#cartItems').append('<li class="tmpcartItem" style="visibility:hidden"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>');
 	// Timer
     requestAnimFrame(function(){
         addtocartCallback(e);
@@ -100,25 +99,21 @@ function addtocart(e){
 }
 
 function addtocartCallback(e){
-	
+	// Get offset of the new item
 	var offset = $('.tmpcartItem').offset();
-	offset.top = offset.top - 80;
-	
+	offset.top = offset.top - 105;
+	// Set position
 	$('.cartAnimImage').css(offset);
-	
+	// Scroll
 	jQuery("html, body").stop().animate({
           'scrollTop': 0
-        }, 2000, 'swing', function() {
+        }, 1000, 'swing', function() {
           //window.location.hash = target;
         });
 
-
-	
 	window.setTimeout(function() {
 	 addtocartEndAnim();
-	}, 3000);
-
-	
+	}, 2000);
 	
 }
 
