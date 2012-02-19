@@ -2599,7 +2599,7 @@ body {
   clear: both;
   background-color: #06a89b;
   position: absolute;
-  z-index: 3000;
+  z-index: 30000;
 }
 .header_logo {
   position: absolute;
