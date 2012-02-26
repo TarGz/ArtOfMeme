@@ -1,11 +1,5 @@
 /*!
- * Bootstrap Responsive v2.0.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * ArtOfMeme Responsive v1.0.0
  */
 .clearfix {
   *zoom: 1;
@@ -22,9 +16,6 @@
   visibility: hidden;
 }
 @media (max-width: 480px) {
-  .yoyo{
-    
-  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

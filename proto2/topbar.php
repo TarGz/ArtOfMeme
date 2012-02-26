@@ -64,55 +64,34 @@
 
     <!-- CART -->
  <div id="cartCcontainer" class="cartzone collapse">
-	 <div id="cartItems"  class="" >
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-        <div id="cartItemid" class="cartItem"><img class="thumbnail" src="http://placehold.it/160x160" alt=""> </div>
-
-
-
-      <div id="orderzone" class="">
-        2 items in your cart
-        <h4>Total: 85€</h4>
-      <a href="#" class="btn primary">Order</a>
-      </div>
-   </div>
-        <!-- <a id="closecartbuton" class="close" href="#">x</a>
-	 <br/>
-	 <div id="cartCcontainer">
-		 <div id="cartOrder">
-			 	2 items in your cart
-				<h4>Total: 85€</h4>
-			<a href="#" class="btn primary">Order</a>
-
-		 </div>
-
-
-
-
-
-
-<style>
-.cartItem2{
-  display: inline;
-}
-</style>
-		 <div  > 
-        <ul>
-	        <li class="cartItem2"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
- 		   	  <li class="cartItem2"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
-  		  	<li class="cartItem2"><img class="thumbnail" src="http://placehold.it/120x120" alt=""> </li>
-          </ul>
-		 </div> -->
-
-
-
+<!-- 	 <div id="cartItems"  class="pull-right" >
+        <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
+        <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
+        <div id="cartItemid" class="cartItem">qsd</div>
+        <div id="cartItemid" class="cartItem"><span>KJHKJHKJH</span></div>
+   </div> -->
+   <ul class="thumbnails">
+        <li class="span3">
+          <a href="#" class="thumbnail">
+            <img src="http://placehold.it/160x160" alt="">
+          </a>
+        </li>
+        <li class="span3">
+          <a href="#" class="thumbnail">
+            <img src="http://placehold.it/160x160" alt="">
+          </a>
+        </li>
+        <li class="span3">
+          <a href="#" class="thumbnail">
+            <img src="http://placehold.it/160x160" alt="">
+          </a>
+        </li>
+        <li class="span3">
+          <a href="#" class="thumbnail">
+            <img src="http://placehold.it/160x160" alt="">
+          </a>
+        </li>
+      </ul>
     </div>
 </div>
 <!-- ARROW -->
