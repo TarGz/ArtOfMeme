@@ -6,9 +6,9 @@
 
 <!-- Country
     ================================================== -->
-<div class="container">
+<!-- <div class="container">
 	<div id="topheader" class="row">
-    	<div id="lang" class="span6 offset11 cartTop">
+    	<div id="lang" class="span3 offset8 cartTop">
 		<ul class="country-nav">
 	        <li class="active"><a href="#">Fr €</a></li>
 	        <li><a href="#">Us $</a></li>
@@ -17,7 +17,7 @@
 
 		</div>
 	</div>	
-</div>
+</div> -->
 <!-- Navbar
     ================================================== -->
     <div class="navbar">
@@ -55,7 +55,6 @@
            		<li class="navbar-text"><a href="#">Hi!  Julien</a></li>
             	<li class="divider-vertical"></li>
             	<li  class="navbar-text" data-toggle="collapse" data-target=".cartzone"><a href="#">Your cart</a></li>
-            	
             </ul>
           </div>
         </div>
@@ -64,37 +63,20 @@
 
     <!-- CART -->
  <div id="cartCcontainer" class="cartzone collapse">
-<!-- 	 <div id="cartItems"  class="pull-right" >
-        <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
-        <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
-        <div id="cartItemid" class="cartItem">qsd</div>
-        <div id="cartItemid" class="cartItem"><span>KJHKJHKJH</span></div>
-   </div> -->
-   <ul class="thumbnails">
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x160" alt="">
-          </a>
-        </li>
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x160" alt="">
-          </a>
-        </li>
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x160" alt="">
-          </a>
-        </li>
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x160" alt="">
-          </a>
-        </li>
-      </ul>
+
+      <div  class="productblock">
+        <div id="cartItemid" class="cartItem" >
+            <img class="cartImage" src="http://placehold.it/160x160" alt="">
+            <div class="cartIntemDetails  collapse"> Lorem ipsum dolor lalala </div>
+        </div>
+
+      </div>
+      <div class="orderblock">azeaz</div> 
+
+
     </div>
 </div>
 <!-- ARROW -->
-<div class="container">
+<!-- <div class="container">
 	<div class="container-arrow "></div>
-</div>
+</div> -->

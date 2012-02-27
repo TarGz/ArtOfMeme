@@ -48,12 +48,11 @@ function isMSIE() {
 
 /** INIT **/
 function init(){
+	$catritemid = 0;
 	$('.cartzone').on('hidden', function () {
-	  console.log("hidden");
 	  cartIsOpen=false;
 	})
 	$('.cartzone').on('show', function () {
-	  console.log("show");
 	  cartIsOpen=true;
 	})
 }
@@ -63,8 +62,8 @@ function bindclick(){
 
 	$('#closecartbuton').click(	function() {butonclick();});
 	$('#cartbouton').click(	   	function() {butonclick();});
-	
 	$('#addtocart').click(	   	function(e) {addtocart(e);});
+	$('.cartItem').click(	   	function(e) {editCartItem(e);});
 
 }
 
@@ -76,20 +75,20 @@ function openCart(){
 	if(!cartIsOpen){
 	 
 	 $(".cartzone").collapse('show');
-	 // $(".cartzone").height("200px");
 	 $(".navbar-arrow").css("border-color",  "transparent  transparent grey transparent");
 	 }
 }
 function closeCart(){
 	if(!cartIsOpen){
 	$(".cartzone").collapse('hide');
-	setTimeout('cleararrow()',500);
+		setTimeout('cleararrow()',500);
 	}
 	
 }
 function cleararrow(){
 	$(".navbar-arrow").css("border-color",  "transparent  transparent white transparent");
 }
+
 /** Add to cart **/
 function addtocart(e){
 	openCart();
@@ -101,9 +100,9 @@ function addtocart(e){
 	// CSS animation
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
 	setAnimationProperty($('.cartAnimImage'),"duration","1.5s");
-
+	$catritemid += 1;
 	// Add real item to cart
-	$('#cartItemid').before('<div id="cartItemid" class="tmpcartItem" style="visibility:hidden"><img src="http://placehold.it/160x160" alt=""> </div>');
+	$('#cartItemid').before('<div id="cartItemid" class="tmpcartItem" style="visibility:hidden"><img src="http://placehold.it/160x160" class="cartImage" alt=""><div class="cartIntemDetails  collapse"> Lorem ipsum dolor lalala  Lorem ipsum dolor lalala  Lorem ipsum dolor lalala '+$catritemid+' </div></div>');
 	// Timer
     requestAnimFrame(function(){
         addtocartCallback(e);
@@ -127,6 +126,7 @@ function addtocartCallback(e){
 	window.setTimeout(function() {
 	 addtocartEndAnim();
 	}, 1500);
+
 }
 
 function addtocartEndAnim(){
@@ -135,33 +135,12 @@ function addtocartEndAnim(){
 	item.css("visibility","visible");
 	item.removeClass('tmpcartItem').addClass('cartItem');
 	$('.animInsert').children().remove();
+	item.click(	   	function(e) {editCartItem(e);});
 }
 
-
-/*
-Scroll to
-
-aze aze aze ljkaz lejkljakz
-
-jQuery("html, body").stop().animate({
-          'scrollTop': 0
-        }, 500, 'swing', function() {
-          //window.location.hash = target;
-        });
-
-Transition end event 
-var transEndEventNames = {
-    'WebkitTransition' : 'webkitTransitionEnd',
-    'MozTransition'    : 'transitionend',
-    'OTransition'      : 'oTransitionEnd',
-    'msTransition'     : 'msTransitionEnd', // maybe?
-    'transition'       : 'transitionEnd'
-};
-var transEndEventName = transEndEventNames[ Modernizr.prefixed('transition') ];
-
-jQuery('monitem').bind(transEndEventName,function(e){
-//callback
-})
-*/
-
+function editCartItem(e){
+	console.log("editCartItem");
+	console.log($( ".cartIntemDetails",e.currentTarget));
+	$( ".cartIntemDetails",e.currentTarget).collapse('toggle');
+}
 
