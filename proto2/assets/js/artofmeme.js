@@ -97,13 +97,15 @@ function addtocart(e){
 	var offset = $('#'+e.currentTarget.id).offset();
 	$('.animInsert').append('<img class="cartAnimImage cartItem" src="http://placehold.it/160x160" alt="">');
 
+
 	$('.cartAnimImage').css(offset);
 	// CSS animation
 	setAnimationProperty($('.cartAnimImage'),"property","top, left");
 	setAnimationProperty($('.cartAnimImage'),"duration","1.5s");
 
 	// Add real item to cart
-	$('#cartItemid').before('<div id="cartItemid" class="tmpcartItem" style="visibility:hidden"><img src="http://placehold.it/160x160" alt=""> </div>');
+	// $('#cartItemid').before('<div id="cartItemid" class="tmpcartItem" style="visibility:hidden"><img src="http://placehold.it/160x160" alt=""> </div>');
+	$('#cartItemid').before('<div id="cartItemid" class="tmpcartItem cartBlock" style="visibility:hidden"><img class="" src="http://placehold.it/160x160" alt=""> lalalalal</div>');
 	// Timer
     requestAnimFrame(function(){
         addtocartCallback(e);

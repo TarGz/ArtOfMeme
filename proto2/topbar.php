@@ -8,7 +8,7 @@
     ================================================== -->
 <div class="container">
 	<div id="topheader" class="row">
-    	<div id="lang" class="span6 offset11 cartTop">
+    	<div id="lang" class="span3 offset9 cartTop">
 		<ul class="country-nav">
 	        <li class="active"><a href="#">Fr €</a></li>
 	        <li><a href="#">Us $</a></li>
@@ -64,12 +64,62 @@
 
     <!-- CART -->
  <div id="cartCcontainer" class="cartzone collapse">
+  <div class="container">
+    <div id="productCart" class="row">
+      <div id="cartItemid" class="cartBlock">
+        <!-- <img class="" src="http://placehold.it/140x140" alt=""> -->
+        <div class="cartBlockImg"></div>
+        <div class="cartBlockInfo">z asd qsd qsd qsd qsd </div>
+        <div class="cartBlockFooter">
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+
+        </div>
+      </div>
+<div id="cartItemid" class="cartBlock">
+        <!-- <img class="" src="http://placehold.it/140x140" alt=""> -->
+        <div class="cartBlockImg"></div>
+        <div class="cartBlockInfo">z asd qsd qsd qsd qsd </div>
+        <div class="cartBlockFooter">
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+
+        </div>
+      </div>
+      <div id="cartItemid" class="cartBlock">
+        <!-- <img class="" src="http://placehold.it/140x140" alt=""> -->
+        <div class="cartBlockImg"></div>
+        <div class="cartBlockInfo">z asd qsd qsd qsd qsd </div>
+        <div class="cartBlockFooter">
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+            <div class="cartBlockFooterItem"><span>X</span></div>
+
+        </div>
+      </div>
+    </div>
+    <div id="cartOrderZone" class="row" style="background-color:#FF0000">
+      <span class="span2 offset6" style="background-color:#00FF00"><h4 class="">Shipping 12.00€</h4></span>
+      <span class="span2" style="background-color:#00FF00"><h2 class="">Total 56.00€</h2></span>
+      <span class="span2" style="background-color:#00FFFF"><button class="btn-large btn-primary pull-right" href="#">Check out</button></span>
+
+    </div> 
+
+  </div>
+
+
+
 <!-- 	 <div id="cartItems"  class="pull-right" >
         <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
         <div id="cartItemid" class="cartItem"><img src="http://placehold.it/160x160" alt=""></div>
         <div id="cartItemid" class="cartItem">qsd</div>
         <div id="cartItemid" class="cartItem"><span>KJHKJHKJH</span></div>
-   </div> -->
+   </div>
    <ul class="thumbnails">
         <li class="span3">
           <a href="#" class="thumbnail">
@@ -92,9 +142,10 @@
           </a>
         </li>
       </ul>
+       -->
     </div>
 </div>
 <!-- ARROW -->
-<div class="container">
+<!-- <div class="container">
 	<div class="container-arrow "></div>
-</div>
+</div> -->
