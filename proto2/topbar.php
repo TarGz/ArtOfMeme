@@ -6,9 +6,13 @@
 
 <!-- Country
     ================================================== -->
-<div class="container">
+<!-- <div class="container">
 	<div id="topheader" class="row">
+<<<<<<< HEAD
     	<div id="lang" class="span3 offset9 cartTop">
+=======
+    	<div id="lang" class="span3 offset8 cartTop">
+>>>>>>> bbc5da56780eec45be5b91b5e55a7918c93eccd9
 		<ul class="country-nav">
 	        <li class="active"><a href="#">Fr €</a></li>
 	        <li><a href="#">Us $</a></li>
@@ -17,7 +21,7 @@
 
 		</div>
 	</div>	
-</div>
+</div> -->
 <!-- Navbar
     ================================================== -->
     <div class="navbar">
@@ -55,7 +59,6 @@
            		<li class="navbar-text"><a href="#">Hi!  Julien</a></li>
             	<li class="divider-vertical"></li>
             	<li  class="navbar-text" data-toggle="collapse" data-target=".cartzone"><a href="#">Your cart</a></li>
-            	
             </ul>
           </div>
         </div>
@@ -64,6 +67,7 @@
 
     <!-- CART -->
  <div id="cartCcontainer" class="cartzone collapse">
+
   <div class="container">
     <div id="productCart" class="row">
       <div id="cartItemid" class="cartBlock">
@@ -143,6 +147,7 @@
         </li>
       </ul>
        -->
+
     </div>
 </div>
 <!-- ARROW -->

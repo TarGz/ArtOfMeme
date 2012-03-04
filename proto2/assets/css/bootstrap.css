@@ -253,7 +253,6 @@ body {
   width: 90%;
 }
 .cartAnimImage {
-  clear: both;
   background-color: #46a546;
   position: absolute;
   z-index: 3000;
